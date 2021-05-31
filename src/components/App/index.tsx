@@ -1,25 +1,16 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import React from 'react'
 
+import _App from './styled'
 import Navbar from '../Navbar'
 import PageRouter from '../PageRouter'
 
-
-function App() {
+function App () {
   return (
-    <div className="App">
-      <>
+    <_App>
       <Navbar />
       <PageRouter />
-      </>
-      
-    </div>
-  );
+    </_App>
+  )
 }
 
-export default App;
+export default App
