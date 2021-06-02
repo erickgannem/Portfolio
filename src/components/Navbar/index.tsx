@@ -7,6 +7,8 @@ import Center from './styled/Center'
 import NavLinks from './styled/NavLinks'
 import NavLink from './styled/NavLink'
 import Image from './styled/Image'
+import SocialIcons from './styled/SocialIcons'
+import SocialIcon from './styled/SocialIcon'
 
 import Photo from '../../assets/images/IMG_20180208_192306.jpg'
 
