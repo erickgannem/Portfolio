@@ -29,6 +29,9 @@ const NavLinks = styled.ul`
 `
 const NavLink = styled(Link)`
   text-decoration: none;
+  margin: 0 ${sizes.rem['25px']}rem;
+  color: ${colors.darkBlueGreen};
+  font-size: ${sizes.rem['20px']}rem;
 `
 
 const Right = styled.div``
