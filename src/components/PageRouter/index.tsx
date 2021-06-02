@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Route, BrowserRouter } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 
 import Home from '../../pages/Home'
 import About from '../../pages/About'
@@ -9,7 +9,6 @@ import Works from '../../pages/Works'
 
 export default function PageRouter () {
   return (
-    <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route path="/about" component={About}/>
@@ -17,7 +16,5 @@ export default function PageRouter () {
         <Route path="/services" component={Services}/>
         <Route path="/works" component={Works}/>
       </Switch>
-    </BrowserRouter>
-
   )
 }

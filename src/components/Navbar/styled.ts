@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 import styling from '../../styling'
 
@@ -22,8 +23,14 @@ const Image = styled.img`
 `
 
 const Center = styled.div``
-const NavLinks = styled.ul``
+const NavLinks = styled.ul`
+  display: flex;
+  flex-direction: row;
+`
+const NavLink = styled(Link)`
+  text-decoration: none;
+`
 
 const Right = styled.div``
 
-export { Nav, Left, Center, Right, Image, NavLinks }
+export { Nav, Left, Center, Right, Image, NavLinks, NavLink }
