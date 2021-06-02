@@ -1,8 +1,14 @@
 import React from 'react'
 
-import Photo from '../../assets/images/IMG_20180208_192306.jpg'
+import Nav from './styled/Nav'
+import Left from './styled/Left'
+import Right from './styled/Right'
+import Center from './styled/Center'
+import NavLinks from './styled/NavLinks'
+import NavLink from './styled/NavLink'
+import Image from './styled/Image'
 
-import { Nav, Left, Center, Right, Image, NavLinks, NavLink } from './styled'
+import Photo from '../../assets/images/IMG_20180208_192306.jpg'
 
 export default function Navbar () {
   return (
