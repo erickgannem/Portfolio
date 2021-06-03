@@ -1,4 +1,5 @@
 import React from 'react'
+import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 import Nav from './styled/Nav'
 import Left from './styled/Left'
@@ -8,11 +9,13 @@ import NavLinks from './styled/NavLinks'
 import NavLink from './styled/NavLink'
 import Image from './styled/Image'
 import SocialIcons from './styled/SocialIcons'
-import SocialIcon from './styled/SocialIcon'
+import SocialIconContainer from './styled/SocialIconContainer'
 
+import styling from '../../styling'
 import Photo from '../../assets/images/IMG_20180208_192306.jpg'
 
 export default function Navbar () {
+  const { sizes, colors } = styling
   return (
     <Nav>
       <Left>
@@ -38,7 +41,26 @@ export default function Navbar () {
         </NavLinks>
       </Center>
       <Right>
-        3
+        <SocialIcons>
+          <SocialIconContainer>
+            <IoLogoInstagram
+              size={`${sizes.rem['25px']}rem`}
+              color={colors.coolGrey}
+            />
+          </SocialIconContainer>
+          <SocialIconContainer>
+            <IoLogoGithub
+              size={`${sizes.rem['25px']}rem`}
+              color={colors.coolGrey}
+            />
+          </SocialIconContainer>
+          <SocialIconContainer>
+            <IoLogoLinkedin
+              size={`${sizes.rem['25px']}rem`}
+              color={colors.coolGrey}
+            />
+          </SocialIconContainer>
+        </SocialIcons>
       </Right>
     </Nav>
   )
