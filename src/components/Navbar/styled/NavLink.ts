@@ -4,10 +4,18 @@ import { Link } from 'react-router-dom'
 import styling from '../../../styling'
 const { colors, sizes } = styling
 
+type NavLinkProps = {
+  isActive?: boolean
+}
 const NavLink = styled(Link)`
   text-decoration: none;
-  margin: 0 ${sizes.rem['25px']}rem;
+  margin: 0 ${sizes.rem['20px']}rem;
   color: ${colors.darkBlueGreen};
   font-size: ${sizes.rem['20px']}rem;
+  background-color: ${
+    ({ isActive }: NavLinkProps) => isActive ? colors.paleAqua : 'none'
+  };
+  padding: ${sizes.rem['10px']}rem ${sizes.rem['15px']}rem;
+  border-radius: ${sizes.rem['5px']}rem
 `
 export default NavLink

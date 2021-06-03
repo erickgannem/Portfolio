@@ -1,4 +1,5 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom'
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 import Nav from './styled/Nav'
@@ -15,6 +16,7 @@ import styling from '../../styling'
 import Photo from '../../assets/images/IMG_20180208_192306.jpg'
 
 export default function Navbar () {
+  const { pathname: path } = useLocation()
   const { sizes, colors } = styling
   return (
     <Nav>
@@ -23,21 +25,30 @@ export default function Navbar () {
       </Left>
       <Center>
         <NavLinks>
-          <NavLink to='/'>
-            Home
-          </NavLink>
-          <NavLink to='/about'>
-            About
-          </NavLink>
-          <NavLink to='/works'>
-            Works
-          </NavLink>
-          <NavLink to='/services'>
-            Services
-          </NavLink>
-          <NavLink to='/contact'>
-            Contact
-          </NavLink>
+          <NavLink
+            to='/'
+            isActive={path === '/'}
+          >Home</NavLink>
+
+          <NavLink
+            to='/about'
+            isActive={path === '/about'}
+          >About</NavLink>
+
+          <NavLink
+            to='/works'
+            isActive={path === '/works'}
+          >Works</NavLink>
+
+          <NavLink
+            to='/services'
+            isActive={path === '/services'}
+          >Services</NavLink>
+
+          <NavLink
+            to='/contact'
+            isActive={path === '/contact'}
+          >Contact</NavLink>
         </NavLinks>
       </Center>
       <Right>
