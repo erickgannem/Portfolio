@@ -10,6 +10,6 @@ const Nav = styled.nav`
   place-items: center;
   background-color: ${colors.paleyGrey2};
   box-shadow: 1px 1px 1px ${colors.shadow10};
-  padding: ${sizes.rem['15px']}rem;
+  padding: ${sizes.rem['15px']}rem ${sizes.rem['30px']}rem;
 `
 export default Nav
