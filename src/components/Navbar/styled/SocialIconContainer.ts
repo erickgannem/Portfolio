@@ -1,11 +1,17 @@
 import styled from 'styled-components'
 
-import styling from '../../../styling'
+// import styling from '../../../styling'
 
-const { sizes } = styling
+// const { sizes } = styling
 
-const SocialIconContainer = styled.a`
-  margin: 0 ${sizes.rem['15px']}rem;
+type Props = {
+  margin?: string
+}
+const SocialIconContainer = styled.li`
+${
+  ({ margin }: Props) => margin ? `margin: 0 ${margin}` : 'margin: 0'
+}
+  
 `
 
 export default SocialIconContainer

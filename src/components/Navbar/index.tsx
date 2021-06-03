@@ -48,7 +48,7 @@ export default function Navbar () {
               color={colors.coolGrey}
             />
           </SocialIconContainer>
-          <SocialIconContainer>
+          <SocialIconContainer margin={`${sizes.rem['20px']}rem`}>
             <IoLogoGithub
               size={`${sizes.rem['25px']}rem`}
               color={colors.coolGrey}
