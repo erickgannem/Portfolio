@@ -1,7 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const _Container = styled.div``
+import styling from '../../styling'
+
+const { sizes } = styling
+
+const _Container = styled.div`
+  padding: ${sizes.rem['30px']}rem;
+`
 
 type ContainerProps = {
   children: React.ReactNode
