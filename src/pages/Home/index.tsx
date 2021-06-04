@@ -7,7 +7,8 @@ export default function Home () {
   return (
     <Container>
       <Hero>
-        <h1>Hero</h1>
+        <section>s</section>
+        <section>a</section>
       </Hero>
     </Container>
   )

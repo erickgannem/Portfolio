@@ -1,24 +1,14 @@
-import React from 'react'
-
 import styled from 'styled-components'
 
 import styling from '../../styling'
 
 const { sizes, colors } = styling
 
-const _Hero = styled.div`
+const Hero = styled.div`
   background-color: ${colors.paleyGrey2};
-  padding: ${sizes.rem['15px']}rem;
+  padding: ${sizes.rem['30px']}rem;
   border-radius: ${sizes.rem['5px']}rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 `
-
-type HeroProps = {
-  children: React.ReactNode
-}
-export default function Hero ({ children }: HeroProps) {
-  return (
-    <_Hero>
-      {children}
-    </_Hero>
-  )
-}
+export default Hero
