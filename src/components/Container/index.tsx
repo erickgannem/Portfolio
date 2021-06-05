@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-import styling from '../../guidelines'
+import guidelines from '../../guidelines'
 
-const { sizes } = styling
+const { sizes } = guidelines
 
 const Container = styled.div`
   padding: ${sizes.rem['30px']}rem;
