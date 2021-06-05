@@ -7,6 +7,8 @@ export default {
     paleAqua: '#B0F2DF',
     darkBlueGreen: '#153C34',
     greenBlue: '#00C88E',
+    pinkishRed: '#FF004C',
+    aquaGreen: '#00EB9F',
     shadow10: 'rgba(0, 0, 0, 0.1)'
   },
   sizes: {
