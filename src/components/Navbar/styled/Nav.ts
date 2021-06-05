@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import styling from '../../../styling'
+import styling from '../../../guidelines'
 
 const { colors, sizes } = styling
 

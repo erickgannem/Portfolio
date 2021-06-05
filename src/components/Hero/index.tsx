@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import styling from '../../styling'
+import styling from '../../guidelines'
 
 const { sizes, colors } = styling
 

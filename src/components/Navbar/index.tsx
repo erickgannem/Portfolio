@@ -12,7 +12,7 @@ import Image from './styled/Image'
 import SocialIcons from './styled/SocialIcons'
 import SocialIconContainer from './styled/SocialIconContainer'
 
-import styling from '../../styling'
+import styling from '../../guidelines'
 import Photo from '../../assets/images/IMG_20180208_192306.jpg'
 
 export default function Navbar () {
