@@ -1,9 +1,5 @@
 import styled from 'styled-components'
 
-// import styling from '../../../styling'
-
-// const { sizes } = styling
-
 type Props = {
   margin?: string
 }

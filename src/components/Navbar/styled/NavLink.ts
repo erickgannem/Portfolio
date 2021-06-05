@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-import styling from '../../../guidelines'
-const { colors, sizes } = styling
+import guidelines from '../../../guidelines'
+const { colors, sizes } = guidelines
 
 type NavLinkProps = {
   isactive: boolean

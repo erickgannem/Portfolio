@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import styling from '../../../guidelines'
+import guidelines from '../../../guidelines'
 
-const { colors, sizes } = styling
+const { colors, sizes } = guidelines
 
 const Nav = styled.nav`
   width: 100%;
