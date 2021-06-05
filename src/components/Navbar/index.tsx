@@ -27,27 +27,27 @@ export default function Navbar () {
         <NavLinks>
           <NavLink
             to='/'
-            isActive={path === '/'}
+            isactive={path === '/'}
           >Home</NavLink>
 
           <NavLink
             to='/about'
-            isActive={path === '/about'}
+            isactive={path === '/about'}
           >About</NavLink>
 
           <NavLink
             to='/works'
-            isActive={path === '/works'}
+            isactive={path === '/works'}
           >Works</NavLink>
 
           <NavLink
             to='/services'
-            isActive={path === '/services'}
+            isactive={path === '/services'}
           >Services</NavLink>
 
           <NavLink
             to='/contact'
-            isActive={path === '/contact'}
+            isactive={path === '/contact'}
           >Contact</NavLink>
         </NavLinks>
       </Center>

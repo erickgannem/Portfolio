@@ -17,9 +17,16 @@ export default function Home () {
           <Text
             fontSize={sizes.rem['50px'] + 'rem'}
             fontWeight='bold'
-            color={colors.darkBlueGreen}
+            color={colors.coolGrey}
+            fontFamily='Open Sans'
           >Hello, my name is Erick</Text>
-          <Text>I am a web developer</Text>
+          <Text
+            fontSize={sizes.rem['20px'] + 'rem'}
+            color={colors.darkBlueGreen}
+            fontFamily='Open Sans'
+            lineHeight={sizes.rem['30px'] + 'rem'}
+          >I am a freelancer, +5 years experience web developer <br /> Profissional at building websites and services integration.</Text>
+
         </Column>
       </Hero>
     </Container>

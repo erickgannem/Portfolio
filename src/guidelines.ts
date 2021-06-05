@@ -3,6 +3,7 @@ export default {
     paleGrey1: '#ECF1F9',
     paleyGrey2: '#E1E8EF',
     coolGrey: '#869A96',
+    coolGrey2: '#153C34',
     paleAqua: '#B0F2DF',
     darkBlueGreen: '#153C34',
     greenBlue: '#00C88E',
