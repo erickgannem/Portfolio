@@ -27,27 +27,27 @@ export default function Navbar () {
         <NavLinks>
           <NavLink
             to='/'
-            isactive={path === '/'}
+            $isactive={path === '/'}
           >Home</NavLink>
 
           <NavLink
             to='/about'
-            isactive={path === '/about'}
+            $isactive={path === '/about'}
           >About</NavLink>
 
           <NavLink
             to='/works'
-            isactive={path === '/works'}
+            $isactive={path === '/works'}
           >Works</NavLink>
 
           <NavLink
             to='/services'
-            isactive={path === '/services'}
+            $isactive={path === '/services'}
           >Services</NavLink>
 
           <NavLink
             to='/contact'
-            isactive={path === '/contact'}
+            $isactive={path === '/contact'}
           >Contact</NavLink>
         </NavLinks>
       </Center>
