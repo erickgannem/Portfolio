@@ -4,25 +4,18 @@ import Container from '../../components/Container'
 import Hero from '../../components/Hero'
 import Column from '../../components/Column'
 import Text from '../../components/Text'
-import IconContainer from '../../components/IconContainer'
 
-import { ReactComponent as Sketch } from '../../assets/svg/sketch.svg'
-import { ReactComponent as Blocks } from '../../assets/svg/blocks.svg'
-import { ReactComponent as Diagram } from '../../assets/svg/diagram.svg'
-import { ReactComponent as Mobile } from '../../assets/svg/mobile.svg'
+import { ReactComponent as Illustration } from '../../assets/svg/left-side-hero.svg'
 
-import styling from '../../guidelines'
+import guidelines from '../../guidelines'
 
 export default function Home () {
-  const { sizes, colors } = styling
+  const { sizes, colors } = guidelines
   return (
     <Container>
       <Hero>
         <Column direction='column'>
-          <IconContainer position='relative' top='0' left='0' Icon={Sketch} bgColor={colors.aquaGreen}/>
-          <IconContainer position='relative' top='0' left='0' Icon={Mobile} bgColor={colors.coolGrey}/>
-          <IconContainer position='relative' top='0' left='0' Icon={Diagram} bgColor={colors.pinkishRed}/>
-          <IconContainer position='relative' top='0' left='0' Icon={Blocks} bgColor={colors.darkBlueGreen}/>
+          <Illustration />
         </Column>
         <Column direction='column' alignItems='center'>
           <Text
