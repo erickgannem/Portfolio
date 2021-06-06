@@ -1,11 +1,16 @@
 import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
+import styled from 'styled-components'
 
-import _App from './styled'
 import Navbar from '../Navbar'
 import PageRouter from '../PageRouter'
 
-function App () {
+const _App = styled.div`
+  display: grid;
+  grid-template-rows: 0fr 1fr;
+`
+
+export default function App () {
   return (
     <_App>
       <Router>
@@ -15,5 +20,3 @@ function App () {
     </_App>
   )
 }
-
-export default App

@@ -10,11 +10,11 @@ import Works from '../../pages/Works'
 export default function PageRouter () {
   return (
       <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route path="/about" component={About}/>
-        <Route path="/contact" component={Contact}/>
-        <Route path="/services" component={Services}/>
-        <Route path="/works" component={Works}/>
+        <Route exact path='/' component={Home}/>
+        <Route path='/about' component={About}/>
+        <Route path='/contact' component={Contact}/>
+        <Route path='/services' component={Services}/>
+        <Route path='/works' component={Works}/>
       </Switch>
   )
 }
