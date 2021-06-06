@@ -1,14 +1,25 @@
 import React, { SVGProps } from 'react'
 import styled from 'styled-components'
 import guidelines from '../../guidelines'
-
-interface IconContainerProps {
-  color?: string;
+interface _IconContainerProps {
+  bgColor?: string
+  position?: string
+  top?: string
+  bottom?: string
+  left?: string
+  right?: string
+}
+interface IconContainerProps extends _IconContainerProps {
   Icon: React.FunctionComponent<SVGProps<SVGSVGElement>>;
 }
 
 const { sizes } = guidelines
-const _IconContainer = styled.div<{bgColor?: string}>`
+const _IconContainer = styled.div<_IconContainerProps>`
+  position: ${({ position }) => position && position};
+  top: ${({ top }) => top && top};
+  left: ${({ left }) => left && left};
+  right: ${({ right }) => right && right};
+  bottom: ${({ bottom }) => bottom && bottom};
   display: flex;
   justify-content:center;
   align-items: center;
@@ -17,9 +28,10 @@ const _IconContainer = styled.div<{bgColor?: string}>`
   background-color: ${({ bgColor }) => bgColor || ''};
 `
 
-function IconContainer ({ color, Icon }: IconContainerProps) {
+function IconContainer (props: IconContainerProps) {
+  const { Icon } = props
   return (
-    <_IconContainer bgColor={color}>
+    <_IconContainer {...props}>
       <Icon />
     </_IconContainer>
   )

@@ -18,13 +18,13 @@ export default function Home () {
   return (
     <Container>
       <Hero>
-        <Column direction="column">
-          <IconContainer Icon={Sketch} color={colors.aquaGreen}/>
-          <IconContainer Icon={Blocks} color={colors.darkBlueGreen}/>
-          <IconContainer Icon={Diagram} color={colors.pinkishRed}/>
-          <IconContainer Icon={Mobile} color={colors.coolGrey}/>
+        <Column direction='column'>
+          <IconContainer position='relative' top='0' left='0' Icon={Sketch} bgColor={colors.aquaGreen}/>
+          <IconContainer position='relative' top='0' left='0' Icon={Mobile} bgColor={colors.coolGrey}/>
+          <IconContainer position='relative' top='0' left='0' Icon={Diagram} bgColor={colors.pinkishRed}/>
+          <IconContainer position='relative' top='0' left='0' Icon={Blocks} bgColor={colors.darkBlueGreen}/>
         </Column>
-        <Column direction="column">
+        <Column direction='column' alignItems='center'>
           <Text
             fontSize={sizes.rem['50px'] + 'rem'}
             fontWeight='bold'
