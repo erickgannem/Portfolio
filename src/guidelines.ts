@@ -1,7 +1,8 @@
 export default {
   colors: {
+    white: '#FFF',
     paleGrey1: '#ECF1F9',
-    paleyGrey2: '#E1E8EF',
+    paleGrey2: '#E1E8EF',
     coolGrey: '#869A96',
     coolGrey2: '#153C34',
     paleAqua: '#B0F2DF',
