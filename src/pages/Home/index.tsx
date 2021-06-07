@@ -33,10 +33,11 @@ export default function Home () {
         >
           <Row direction='column'>
             <Text
-              fontSize={sizes.rem['50px'] + 'rem'}
+              fontSize={sizes.rem['70px'] + 'rem'}
               fontWeight='bold'
               color={colors.coolGrey}
-              fontFamily='Open Sans'
+              fontFamily='Fira Sans'
+              margin={`0 0 ${sizes.rem['10px']}rem 0`}
             >
               Hello, my name is Erick
             </Text>
@@ -45,8 +46,9 @@ export default function Home () {
               color={colors.darkBlueGreen}
               fontFamily='Open Sans'
               lineHeight={sizes.rem['30px'] + 'rem'}
+              textAlign='center'
             >
-              I am a freelancer, +5 years experience web developer <br /> Profissional at building websites integrating web services.
+              I am a freelancer, +5 years experience web developer <br /> Professional at building websites and integrating web services.
             </Text>
           </Row>
           <Row width='100%'>

@@ -1,9 +1,5 @@
 import styled from 'styled-components'
 
-// import guidelines from '../../guidelines'
-
-// const { sizes } = guidelines
-
 interface RowProps {
   width?: string
   direction?: string
