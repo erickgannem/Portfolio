@@ -3,11 +3,27 @@ import guidelines from '../../guidelines'
 
 const { sizes, colors } = guidelines
 
-const TextInput = styled.input`
+interface TextInputProps {
+  grow?: string
+  borderRadius?: string
+  padding?: string
+}
+
+const TextInput = styled.input<TextInputProps>`
+  border-radius: ${({ borderRadius }) => borderRadius};
+  flex-grow: ${({ grow }) => grow};
   background-color: ${colors.white};
-  border: 1px solid ${colors.paleGrey2};
-  padding: ${sizes.rem['15px']}rem;
+  border: none;
+  padding: ${({ padding }) => padding};
   font-size: ${sizes.rem['15px']}rem;
+
+  ${this}:focus {
+    outline: none;
+  }
+
+  ::placeholder {
+    color: ${colors.coolGrey};
+  }
 `
 
 export default TextInput

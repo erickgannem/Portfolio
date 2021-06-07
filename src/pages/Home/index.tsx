@@ -17,6 +17,7 @@ export default function Home () {
   return (
     <Container>
       <Hero>
+
         <Column
           direction='column'
           padding={`0 ${sizes.rem['15px']}rem`}
@@ -30,7 +31,7 @@ export default function Home () {
           justifyContent='space-between'
           padding={`${sizes.rem['50px']}rem ${sizes.rem['50px']}rem`}
         >
-          <Row>
+          <Row direction='column'>
             <Text
               fontSize={sizes.rem['50px'] + 'rem'}
               fontWeight='bold'
@@ -48,10 +49,14 @@ export default function Home () {
               I am a freelancer, +5 years experience web developer <br /> Profissional at building websites integrating web services.
             </Text>
           </Row>
-
-          <Row>
-            <TextInput />
-            <Button>
+          <Row width='100%'>
+            <TextInput
+              grow='4'
+              borderRadius='5px 0 0 5px'
+              padding={`${sizes.rem['20px']}rem`}
+              placeholder='Email Address'
+            />
+            <Button grow='1' borderRadius='0 5px 5px 0'>
               Contact me
             </Button>
           </Row>

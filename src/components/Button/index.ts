@@ -4,7 +4,14 @@ import guidelines from '../../guidelines'
 
 const { sizes, colors } = guidelines
 
-const Button = styled.button`
+interface ButtonProps {
+  grow?: string
+  borderRadius?: string
+}
+
+const Button = styled.button<ButtonProps>`
+  border-radius: ${({ borderRadius }) => borderRadius};
+  flex-grow: ${({ grow }) => grow};
   background-color: ${colors.greenBlue};
   color: ${colors.white};
   font-weight: bold;
