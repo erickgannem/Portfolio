@@ -8,6 +8,7 @@ import PageRouter from '../PageRouter'
 const _App = styled.div`
   display: grid;
   grid-template-rows: 0fr 1fr;
+  height: 100%;
 `
 
 export default function App () {

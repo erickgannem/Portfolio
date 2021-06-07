@@ -7,6 +7,7 @@ interface TextInputProps {
   grow?: string
   borderRadius?: string
   padding?: string
+  color?: string
 }
 
 const TextInput = styled.input<TextInputProps>`
@@ -16,6 +17,7 @@ const TextInput = styled.input<TextInputProps>`
   border: none;
   padding: ${({ padding }) => padding};
   font-size: ${sizes.rem['15px']}rem;
+  color: ${({ color }) => color};
 
   ${this}:focus {
     outline: none;

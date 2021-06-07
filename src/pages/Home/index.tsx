@@ -28,16 +28,15 @@ export default function Home () {
         <Column
           direction='column'
           alignItems='flex-start'
-          justifyContent='space-between'
           padding={`${sizes.rem['50px']}rem ${sizes.rem['50px']}rem`}
         >
-          <Row direction='column'>
+          <Row direction='column' margin={`0 0 ${sizes.rem['50px']}rem 0`}>
             <Text
               fontSize={sizes.rem['70px'] + 'rem'}
               fontWeight='bold'
               color={colors.coolGrey}
               fontFamily='Fira Sans'
-              margin={`0 0 ${sizes.rem['10px']}rem 0`}
+              margin={`0 0 ${sizes.rem['15px']}rem 0`}
             >
               Hello, my name is Erick
             </Text>
@@ -48,7 +47,10 @@ export default function Home () {
               lineHeight={sizes.rem['30px'] + 'rem'}
               textAlign='center'
             >
-              I am a freelancer, +5 years experience web developer <br /> Professional at building websites and integrating web services.
+              I am a freelancer, +5 years experience web developer
+              <br />
+              Professional at building websites and integrating web services.
+              <br />
             </Text>
           </Row>
           <Row width='100%'>
@@ -57,6 +59,7 @@ export default function Home () {
               borderRadius='5px 0 0 5px'
               padding={`${sizes.rem['20px']}rem`}
               placeholder='Email Address'
+              color={colors.darkBlueGreen}
             />
             <Button grow='1' borderRadius='0 5px 5px 0'>
               Contact me
