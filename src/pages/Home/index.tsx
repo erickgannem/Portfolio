@@ -14,10 +14,10 @@ export default function Home () {
   return (
     <Container>
       <Hero>
-        <Column direction='column'>
+        <Column direction='column' padding={`0 ${sizes.rem['15px']}rem`}>
           <Illustration />
         </Column>
-        <Column direction='column' alignItems='center'>
+        <Column direction='column' alignItems='center' padding={`0 ${sizes.rem['15px']}rem`}>
           <Text
             fontSize={sizes.rem['50px'] + 'rem'}
             fontWeight='bold'
