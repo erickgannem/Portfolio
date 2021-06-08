@@ -22,7 +22,7 @@ export default function Home () {
           direction='column'
           padding={`0 ${sizes.rem['15px']}rem`}
         >
-          <Illustration />
+          <Illustration width={`${sizes.rem['350px']}rem`}/>
         </Column>
 
         <Column
