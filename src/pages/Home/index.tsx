@@ -17,10 +17,10 @@ export default function Home () {
   return (
     <Container>
       <Hero>
-
         <Column
           direction='column'
-          padding={`0 ${sizes.rem['15px']}rem`}
+          margin={`0 ${sizes.rem['5px']}rem`}
+
         >
           <Illustration width={`${sizes.rem['350px']}rem`}/>
         </Column>
@@ -28,7 +28,7 @@ export default function Home () {
         <Column
           direction='column'
           alignItems='flex-start'
-          padding={`${sizes.rem['50px']}rem ${sizes.rem['50px']}rem`}
+          margin={`0 ${sizes.rem['10px']}rem`}
         >
           <Row direction='column' margin={`0 0 ${sizes.rem['50px']}rem 0`}>
             <Text

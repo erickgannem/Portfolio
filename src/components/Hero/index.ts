@@ -6,7 +6,6 @@ const { sizes, colors } = guidelines
 
 const Hero = styled.div`
   background-color: ${colors.paleGrey2};
-  padding: ${sizes.rem['30px']}rem;
   border-radius: ${sizes.rem['5px']}rem;
   display: flex;
   flex-wrap: wrap;
