@@ -1,8 +1,12 @@
 import styled from 'styled-components'
 
 const NavLinks = styled.ul`
-  display: flex;
-  flex-direction: row;
+  display: none;
+  @media (min-width: 1000px) {
+      display: flex;
+      flex-direction: row;
+  }
+
 `
 
 export default NavLinks
