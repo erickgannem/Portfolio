@@ -16,6 +16,10 @@ body {
   background-color:#EBF1F8;
 }
 
+html, body, #root {
+  height: 100%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -30,4 +34,10 @@ code {
 ::-webkit-scrollbar-thumb {
   background: #869A96;
   border-radius: 0.1rem;
+}
+
+@media (min-width: 0) {
+  html {
+    font-size: 85%;
+  }
 }
