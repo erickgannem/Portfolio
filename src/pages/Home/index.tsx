@@ -7,29 +7,17 @@ import Hero from '../../components/Hero'
 import Button from '../../components/Button'
 import Text from '../../components/Text'
 import TextInput from '../../components/TextInput'
-import { ReactComponent as Illustration } from '../../assets/svg/left-side-hero.svg'
+import Illustration from '../../components/Illustration'
 
 import guidelines from '../../guidelines'
-
 const { sizes, colors } = guidelines
 
 export default function Home () {
   return (
     <Container>
       <Hero>
-        <Column
-          direction='column'
-          margin={`0 ${sizes.rem['5px']}rem`}
-
-        >
-          <Illustration width={`${sizes.rem['350px']}rem`}/>
-        </Column>
-
-        <Column
-          direction='column'
-          alignItems='flex-start'
-          margin={`0 ${sizes.rem['10px']}rem`}
-        >
+        <Illustration />
+        <Column direction='column'>
           <Row direction='column' margin={`0 0 ${sizes.rem['50px']}rem 0`}>
             <Text
               fontSize={sizes.rem['70px'] + 'rem'}
