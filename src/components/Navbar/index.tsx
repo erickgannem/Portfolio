@@ -8,6 +8,8 @@ import NavLink from './NavLink'
 import Image from './Image'
 import SocialIcons from './SocialIcons'
 import SocialIconContainer from '../SocialIcon'
+import MenuButton from './MenuButton'
+import MenuContent from './MenuContent'
 
 import guidelines from '../../guidelines'
 import Photo from '../../assets/images/IMG_20180208_192306.jpg'
@@ -18,7 +20,7 @@ export default function Navbar () {
   return (
     <Nav>
         <Image src={Photo} />
-        <Menu />
+        <MenuButton />
         <MenuContent>
           <NavLinks>
             <NavLink
