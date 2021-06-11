@@ -1,19 +1,19 @@
 import React from 'react'
 
 import Container from '../../components/Container'
-import Hero from '../../components/Hero'
 import Column from '../../components/Column'
+import Row from '../../components/Row'
+import Hero from '../../components/Hero'
+import Button from '../../components/Button'
 import Text from '../../components/Text'
 import TextInput from '../../components/TextInput'
-import Row from '../../components/Row'
-import Button from '../../components/Button'
-
 import { ReactComponent as Illustration } from '../../assets/svg/left-side-hero.svg'
 
 import guidelines from '../../guidelines'
 
+const { sizes, colors } = guidelines
+
 export default function Home () {
-  const { sizes, colors } = guidelines
   return (
     <Container>
       <Hero>
@@ -65,9 +65,8 @@ export default function Home () {
               Contact me
             </Button>
           </Row>
-
         </Column>
-      </Hero>
+        </Hero>
     </Container>
   )
 }
