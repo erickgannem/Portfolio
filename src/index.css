@@ -15,7 +15,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color:#EBF1F8;
 }
-
 html, body, #root {
   height: 100%;
 }
@@ -25,6 +24,7 @@ code {
     monospace;
 }
 
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 0.3rem;
 }
@@ -36,8 +36,16 @@ code {
   border-radius: 0.1rem;
 }
 
+/* Media Queries */
 @media (min-width: 0) {
   html {
     font-size: 85%;
   }
+}
+
+@media (max-width: 899px) {
+  #root {
+    display: grid;
+    grid-template-rows: 0fr 1fr;
+  }  
 }
