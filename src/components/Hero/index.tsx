@@ -8,8 +8,12 @@ const Hero = styled.div`
   background-color: ${colors.paleGrey2};
   border-radius: ${sizes.rem['5px']}rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 899px) {
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
 `
 export default Hero

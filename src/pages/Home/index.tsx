@@ -1,8 +1,7 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import Container from '../../components/Container'
-import Column from '../../components/Column'
-import Row from '../../components/Row'
 import Hero from '../../components/Hero'
 import Button from '../../components/Button'
 import Text from '../../components/Text'
@@ -10,15 +9,26 @@ import TextInput from '../../components/TextInput'
 import Illustration from '../../components/Illustration'
 
 import guidelines from '../../guidelines'
+
 const { sizes, colors } = guidelines
+
+const RightSideBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+const HeroTextWrapper = styled.div`
+
+
+`
+const HeroInputWrapper = styled.div``
 
 export default function Home () {
   return (
     <Container>
       <Hero>
         <Illustration />
-        <Column direction='column'>
-          <Row direction='column' margin={`0 0 ${sizes.rem['50px']}rem 0`}>
+        <RightSideBlock>
+          <HeroTextWrapper>
             <Text
               fontSize={sizes.rem['70px'] + 'rem'}
               fontWeight='bold'
@@ -40,8 +50,8 @@ export default function Home () {
               Professional at building websites and integrating web services.
               <br />
             </Text>
-          </Row>
-          <Row width='100%'>
+          </HeroTextWrapper>
+          <HeroInputWrapper>
             <TextInput
               grow='4'
               borderRadius='5px 0 0 5px'
@@ -52,9 +62,9 @@ export default function Home () {
             <Button grow='1' borderRadius='0 5px 5px 0'>
               Contact me
             </Button>
-          </Row>
-        </Column>
-        </Hero>
+          </HeroInputWrapper>
+        </RightSideBlock>
+      </Hero>
     </Container>
   )
 }
