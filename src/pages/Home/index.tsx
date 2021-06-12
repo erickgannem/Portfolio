@@ -17,10 +17,12 @@ const RightSideBlock = styled.div`
   flex-direction: column;
 `
 const HeroTextWrapper = styled.div`
-
-
+  margin: 2rem 0;
+  text-align: center;
 `
-const HeroInputWrapper = styled.div``
+const HeroInputWrapper = styled.div`
+  display: flex;
+`
 
 export default function Home () {
   return (
