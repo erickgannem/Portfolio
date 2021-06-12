@@ -10,7 +10,8 @@ const Hero = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  height: 100%;
+  
   @media (max-width: 899px) {
     padding: 2rem;
     flex-wrap: wrap;
