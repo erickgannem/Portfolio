@@ -17,8 +17,11 @@ const RightSideBlock = styled.div`
   flex-direction: column;
 `
 const HeroTextWrapper = styled.div`
-  margin: 2rem 0;
   text-align: center;
+
+  @media (max-width: 899px) {
+    margin-bottom: 2rem;
+  }
 `
 const HeroInputWrapper = styled.div`
   display: flex;
