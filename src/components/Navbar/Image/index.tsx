@@ -8,6 +8,7 @@ const Image = styled.img`
   width: ${sizes.rem['50px']}rem;
   height: ${sizes.rem['50px']}rem;
   border-radius: 100%;
+  margin: 1rem;
 `
 
 export default Image

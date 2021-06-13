@@ -7,6 +7,7 @@ import guidelines from '../../../guidelines'
 const Wrapper = styled.button`
   border: none;
   background: inherit;
+  padding: 1rem;
   @media (min-width: 900px) {
     display: none;
   }
