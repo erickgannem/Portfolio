@@ -10,65 +10,75 @@ import SocialIcons from './SocialIcons'
 import SocialIconContainer from '../SocialIcon'
 import MenuButton from './MenuButton'
 import MenuContent from './MenuContent'
+import Indicator from './Indicator'
 
 import guidelines from '../../guidelines'
 import Photo from '../../assets/images/IMG_20180208_192306.jpg'
 
+import pathNameFormatter from '../../utils/pathNameFormatter'
+
 export default function Navbar () {
   const { pathname: path } = useLocation()
   const { sizes, colors } = guidelines
+
+  const formattedPath = pathNameFormatter(path) as string
   return (
     <Nav>
-        <Image src={Photo} />
-        <MenuButton />
-        <MenuContent>
-          <NavLinks>
-            <NavLink
-              to='/'
-              $isactive={path === '/'}
-            >Home</NavLink>
-            <NavLink
-              to='/about'
-              $isactive={path === '/about'}
-            >About</NavLink>
-            <NavLink
-              to='/works'
-              $isactive={path === '/works'}
-            >Works</NavLink>
-            <NavLink
-              to='/services'
-              $isactive={path === '/services'}
-            >Services</NavLink>
-            <NavLink
-              to='/contact'
-              $isactive={path === '/contact'}
-            >Contact</NavLink>
-          </NavLinks>
-          <SocialIcons>
-            <SocialIconContainer>
-              <IoLogoInstagram
-                size={`${sizes.rem['25px']}rem`}
-                color={colors.coolGrey}
-              />
-            </SocialIconContainer>
-            <SocialIconContainer
-              margin={`${sizes.rem['30px']}rem`}
-            >
-              <IoLogoGithub
-                size={`${sizes.rem['25px']}rem`}
-                color={colors.coolGrey}
-              />
-            </SocialIconContainer>
-            <SocialIconContainer>
-              <IoLogoLinkedin
-                size={`${sizes.rem['25px']}rem`}
-                color={colors.coolGrey}
-              />
-            </SocialIconContainer>
-          </SocialIcons>
+      <>
+        {
+          formattedPath
+            ? <Indicator path={formattedPath}/>
+            : <Image src={Photo} />
+        }
 
-        </MenuContent>
-
+      </>
+      <MenuButton />
+      <MenuContent>
+        <NavLinks>
+          <NavLink
+            to='/'
+            $isactive={path === '/'}
+          >Home</NavLink>
+          <NavLink
+            to='/about'
+            $isactive={path === '/about'}
+          >About</NavLink>
+          <NavLink
+            to='/works'
+            $isactive={path === '/works'}
+          >Works</NavLink>
+          <NavLink
+            to='/services'
+            $isactive={path === '/services'}
+          >Services</NavLink>
+          <NavLink
+            to='/contact'
+            $isactive={path === '/contact'}
+          >Contact</NavLink>
+        </NavLinks>
+        <SocialIcons>
+          <SocialIconContainer>
+            <IoLogoInstagram
+              size={`${sizes.rem['25px']}rem`}
+              color={colors.coolGrey}
+            />
+          </SocialIconContainer>
+          <SocialIconContainer
+            margin={`${sizes.rem['30px']}rem`}
+          >
+            <IoLogoGithub
+              size={`${sizes.rem['25px']}rem`}
+              color={colors.coolGrey}
+            />
+          </SocialIconContainer>
+          <SocialIconContainer>
+            <IoLogoLinkedin
+              size={`${sizes.rem['25px']}rem`}
+              color={colors.coolGrey}
+            />
+          </SocialIconContainer>
+        </SocialIcons>
+      </MenuContent>
     </Nav>
   )
 }

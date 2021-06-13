@@ -1,6 +1,6 @@
-export default function pathNameFormatter (path: string): string | boolean {
+export default function pathNameFormatter (path: string): string | number {
   if (path === '/') {
-    return false
+    return 0
   }
 
   const [, ...rest] = path.split('')
