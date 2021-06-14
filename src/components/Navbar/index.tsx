@@ -11,15 +11,14 @@ import SocialIconContainer from '../SocialIcon'
 import MenuButton from './MenuButton'
 import MenuContent from './MenuContent'
 import Indicator from './Indicator'
+import Icon from '../Icon'
 
-import guidelines from '../../guidelines'
 import Photo from '../../assets/images/IMG_20180208_192306.jpg'
 
 import pathNameFormatter from '../../utils/pathNameFormatter'
 
 export default function Navbar () {
   const { pathname: path } = useLocation()
-  const { sizes, colors } = guidelines
   const formattedPath = pathNameFormatter(path) as string
   const [isOpen, setIsOpen] = React.useState(true)
 
@@ -63,24 +62,13 @@ export default function Navbar () {
         </NavLinks>
         <SocialIcons>
           <SocialIconContainer>
-            <IoLogoInstagram
-              size={`${sizes.rem['25px']}rem`}
-              color={colors.coolGrey}
-            />
-          </SocialIconContainer>
-          <SocialIconContainer
-            margin={`${sizes.rem['30px']}rem`}
-          >
-            <IoLogoGithub
-              size={`${sizes.rem['25px']}rem`}
-              color={colors.coolGrey}
-            />
+            <Icon IconComponent={IoLogoInstagram} size='2rem'/>
           </SocialIconContainer>
           <SocialIconContainer>
-            <IoLogoLinkedin
-              size={`${sizes.rem['25px']}rem`}
-              color={colors.coolGrey}
-            />
+            <Icon IconComponent={IoLogoGithub} size='2rem'/>
+          </SocialIconContainer>
+          <SocialIconContainer>
+            <Icon IconComponent={IoLogoLinkedin} size='2rem'/>
           </SocialIconContainer>
         </SocialIcons>
       </MenuContent>
