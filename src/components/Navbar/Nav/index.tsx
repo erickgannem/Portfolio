@@ -9,7 +9,7 @@ const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   background-color: ${colors.paleGrey2};
-  box-shadow: 1px 1px 15px ${colors.shadow10};
+  box-shadow: 1px 1px 15px ${colors.shadow30};
   z-index: 1000;
   min-height: 5rem;
   

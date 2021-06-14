@@ -1,4 +1,4 @@
-import React, { MouseEvent, MouseEventHandler } from 'react'
+import React, { useState, MouseEvent, MouseEventHandler } from 'react'
 import { useLocation } from 'react-router-dom'
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
@@ -18,9 +18,10 @@ import Photo from '../../assets/images/IMG_20180208_192306.jpg'
 import pathNameFormatter from '../../utils/pathNameFormatter'
 
 export default function Navbar () {
+  const [isOpen, setIsOpen] = useState(true)
   const { pathname: path } = useLocation()
+
   const formattedPath = pathNameFormatter(path) as string
-  const [isOpen, setIsOpen] = React.useState(true)
 
   const _clickHandler: MouseEventHandler<HTMLElement> = (event: MouseEvent) => {
     event.preventDefault()

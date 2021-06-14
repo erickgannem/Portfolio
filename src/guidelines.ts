@@ -10,7 +10,9 @@ export default {
     greenBlue: '#00C88E',
     pinkishRed: '#FF004C',
     aquaGreen: '#00EB9F',
-    shadow10: 'rgba(0, 0, 0, 0.3)'
+    shadow30: 'rgba(0, 0, 0, 0.3)',
+    shadow60: 'rgba(0, 0, 0, 0.6)',
+    darkBlueGreen90: 'rgba(21, 60, 52, 0.9)'
   },
   sizes: {
     rem: {

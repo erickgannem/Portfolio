@@ -15,7 +15,7 @@ const MenuContent = styled.div<MenuContentProps>`
     position: absolute;
     top: 5rem;
     left: 0;
-    background: ${colors.shadow10};
+    background: ${colors.darkBlueGreen90};
     padding: 1rem;
   }
   
