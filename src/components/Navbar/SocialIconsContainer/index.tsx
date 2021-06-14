@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const SocialIcons = styled.ul`
+const SocialIconsContainer = styled.ul`
     display: flex;
     list-style: none;
 
@@ -10,4 +10,4 @@ const SocialIcons = styled.ul`
     }
 `
 
-export default SocialIcons
+export default SocialIconsContainer

@@ -1,17 +1,15 @@
 import React, { useState, MouseEvent, MouseEventHandler } from 'react'
 import { useLocation } from 'react-router-dom'
-import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 import Nav from './Nav'
 import NavLinks from './NavLinks'
 import NavLink from './NavLink'
 import Image from './Image'
-import SocialIcons from './SocialIcons'
-import SocialIconContainer from '../SocialIcon'
+import SocialIconsContainer from './SocialIconsContainer'
 import MenuButton from './MenuButton'
 import MenuContent from './MenuContent'
 import Indicator from './Indicator'
-import Icon from '../Icon'
+import { GithubIcon, LinkedinIcon, InstagramIcon } from '../../components/Icons'
 
 import Photo from '../../assets/images/IMG_20180208_192306.jpg'
 
@@ -61,17 +59,11 @@ export default function Navbar () {
             $isActive={path === '/contact'}
           >Contact</NavLink>
         </NavLinks>
-        <SocialIcons>
-          <SocialIconContainer>
-            <Icon IconComponent={IoLogoInstagram} size='2rem'/>
-          </SocialIconContainer>
-          <SocialIconContainer>
-            <Icon IconComponent={IoLogoGithub} size='2rem'/>
-          </SocialIconContainer>
-          <SocialIconContainer>
-            <Icon IconComponent={IoLogoLinkedin} size='2rem'/>
-          </SocialIconContainer>
-        </SocialIcons>
+        <SocialIconsContainer>
+          <LinkedinIcon size='2rem' />
+          <GithubIcon size='2rem' />
+          <InstagramIcon size='2rem' />
+        </SocialIconsContainer>
       </MenuContent>
     </Nav>
   )
