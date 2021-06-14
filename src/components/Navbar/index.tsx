@@ -21,7 +21,7 @@ export default function Navbar () {
   const { pathname: path } = useLocation()
   const { sizes, colors } = guidelines
   const formattedPath = pathNameFormatter(path) as string
-  const [isOpen, setIsOpen] = React.useState(false)
+  const [isOpen, setIsOpen] = React.useState(true)
 
   const _clickHandler: MouseEventHandler<HTMLElement> = (event: MouseEvent) => {
     event.preventDefault()

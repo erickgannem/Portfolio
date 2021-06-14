@@ -11,7 +11,8 @@ const Nav = styled.nav`
   background-color: ${colors.paleGrey2};
   box-shadow: 1px 1px 15px ${colors.shadow10};
   z-index: 1000;
-
+  min-height: 5rem;
+  
   @media (min-width: 900px) {
     display: grid;
     grid-template-columns: 0fr 1fr 0fr;
