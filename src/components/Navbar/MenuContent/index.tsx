@@ -1,9 +1,13 @@
 import styled from 'styled-components'
 
-const MenuContent = styled.div`
+interface MenuContentProps {
+  isOpen: boolean
+}
+
+const MenuContent = styled.div<MenuContentProps>`
 
   @media (max-width: 899px) {
-    display: none;
+    display: ${({ isOpen }) => !isOpen && 'none'}
   }
   
 `

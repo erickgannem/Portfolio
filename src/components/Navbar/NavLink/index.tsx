@@ -5,7 +5,7 @@ import guidelines from '../../../guidelines'
 const { colors, sizes } = guidelines
 
 type NavLinkProps = {
-  $isactive: boolean
+  $isActive: boolean
 }
 const NavLink = styled(Link)`
   text-decoration: none;
@@ -13,7 +13,7 @@ const NavLink = styled(Link)`
   color: ${colors.darkBlueGreen};
   font-size: ${sizes.rem['20px']}rem;
   background-color: ${
-    ({ $isactive }: NavLinkProps) => $isactive ? colors.paleAqua : 'none'
+    ({ $isActive }: NavLinkProps) => $isActive ? colors.paleAqua : 'none'
   };
   padding: ${sizes.rem['10px']}rem ${sizes.rem['15px']}rem;
   border-radius: ${sizes.rem['5px']}rem

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { MouseEventHandler } from 'react'
 import styled from 'styled-components'
 import { IoMenu } from 'react-icons/io5'
 
@@ -13,10 +13,14 @@ const Wrapper = styled.button`
   }
 `
 
-export default function MenuButton () {
+interface MenuButtonProps {
+  clickHandler: MouseEventHandler<HTMLElement>
+}
+
+export default function MenuButton ({ clickHandler }: MenuButtonProps) {
   const { colors, sizes } = guidelines
   return (
-    <Wrapper>
+    <Wrapper onClick={clickHandler}>
       <IoMenu size={sizes.rem['30px'] + 'rem'} color={colors.darkBlueGreen} />
     </Wrapper>
   )

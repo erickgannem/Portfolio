@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { MouseEvent, MouseEventHandler } from 'react'
 import { useLocation } from 'react-router-dom'
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
@@ -20,8 +20,13 @@ import pathNameFormatter from '../../utils/pathNameFormatter'
 export default function Navbar () {
   const { pathname: path } = useLocation()
   const { sizes, colors } = guidelines
-
   const formattedPath = pathNameFormatter(path) as string
+  const [isOpen, setIsOpen] = React.useState(false)
+
+  const _clickHandler: MouseEventHandler<HTMLElement> = (event: MouseEvent) => {
+    event.preventDefault()
+    setIsOpen(!isOpen)
+  }
   return (
     <Nav>
       <>
@@ -32,28 +37,28 @@ export default function Navbar () {
         }
 
       </>
-      <MenuButton />
-      <MenuContent>
+      <MenuButton clickHandler={_clickHandler}/>
+      <MenuContent isOpen={isOpen}>
         <NavLinks>
           <NavLink
             to='/'
-            $isactive={path === '/'}
+            $isActive={path === '/'}
           >Home</NavLink>
           <NavLink
             to='/about'
-            $isactive={path === '/about'}
+            $isActive={path === '/about'}
           >About</NavLink>
           <NavLink
             to='/works'
-            $isactive={path === '/works'}
+            $isActive={path === '/works'}
           >Works</NavLink>
           <NavLink
             to='/services'
-            $isactive={path === '/services'}
+            $isActive={path === '/services'}
           >Services</NavLink>
           <NavLink
             to='/contact'
-            $isactive={path === '/contact'}
+            $isActive={path === '/contact'}
           >Contact</NavLink>
         </NavLinks>
         <SocialIcons>
