@@ -10,12 +10,13 @@ type NavLinkProps = {
 const NavLink = styled(Link)`
   text-decoration: none;
   margin: 0 ${sizes.rem['20px']}rem;
-  color: ${colors.darkBlueGreen};
   font-size: ${sizes.rem['20px']}rem;
-  background-color: ${
-    ({ $isActive }: NavLinkProps) => $isActive ? colors.paleAqua : 'none'
-  };
+  background-color: ${({ $isActive }: NavLinkProps) => $isActive && colors.paleAqua};
   padding: ${sizes.rem['10px']}rem ${sizes.rem['15px']}rem;
-  border-radius: ${sizes.rem['5px']}rem
+  border-radius: ${sizes.rem['5px']}rem;
+
+  @media (max-width: 899px) {
+    color: ${({ $isActive }) => $isActive ? colors.darkBlueGreen : colors.paleGrey1}
+  }
 `
 export default NavLink

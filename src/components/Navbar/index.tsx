@@ -16,7 +16,7 @@ import Photo from '../../assets/images/IMG_20180208_192306.jpg'
 import pathNameFormatter from '../../utils/pathNameFormatter'
 
 export default function Navbar () {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
   const { pathname: path } = useLocation()
 
   const formattedPath = pathNameFormatter(path) as string

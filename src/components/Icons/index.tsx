@@ -7,20 +7,20 @@ const { colors } = guidelines
 
 export const InstagramIcon = styled(IoLogoInstagram)`
   @media (max-width: 899px) {
-    color: ${colors.pinkishRed};
+    color: ${colors.paleGrey2};
     margin: 0 2rem;
   }
 `
 export const GithubIcon = styled(IoLogoGithub)`
   @media (max-width: 899px) {
-    color: ${colors.pinkishRed};
+    color: ${colors.paleGrey2};
     margin: 0 2rem;
 
   }
 `
 export const LinkedinIcon = styled(IoLogoLinkedin)`
   @media (max-width: 899px) {
-    color: ${colors.pinkishRed};
+    color: ${colors.paleGrey2};
     margin: 0 2rem;
   }
 `
