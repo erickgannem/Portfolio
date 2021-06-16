@@ -2,7 +2,7 @@ import React, { MouseEventHandler } from 'react'
 import styled from 'styled-components'
 import { IoMenu } from 'react-icons/io5'
 
-import guidelines from '../../../guidelines'
+import guidelines from 'guidelines'
 
 const Wrapper = styled.button`
   border: none;

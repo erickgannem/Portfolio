@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-import Navbar from '../Navbar'
-import PageRouter from '../PageRouter'
+import Navbar from 'components/Navbar'
+import PageRouter from 'components/PageRouter'
 
 export default function App () {
   return (

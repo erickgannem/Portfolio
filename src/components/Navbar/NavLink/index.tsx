@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-import guidelines from '../../../guidelines'
+import guidelines from 'guidelines'
 const { colors, sizes } = guidelines
 
 type NavLinkProps = {

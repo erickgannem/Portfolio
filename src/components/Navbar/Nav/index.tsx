@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import guidelines from '../../../guidelines'
+import guidelines from 'guidelines'
 
 const { colors } = guidelines
 

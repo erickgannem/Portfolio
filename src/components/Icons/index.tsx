@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
-import guidelines from '../../guidelines'
+import guidelines from 'guidelines'
 
 const { colors } = guidelines
 

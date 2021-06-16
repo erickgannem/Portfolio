@@ -1,19 +1,19 @@
 import React, { useState, MouseEvent, MouseEventHandler } from 'react'
 import { useLocation } from 'react-router-dom'
 
-import Nav from './Nav'
-import NavLinks from './NavLinks'
-import NavLink from './NavLink'
-import Image from './Image'
-import SocialIconsContainer from './SocialIconsContainer'
-import MenuButton from './MenuButton'
-import MenuContent from './MenuContent'
-import Indicator from './Indicator'
-import { GithubIcon, LinkedinIcon, InstagramIcon } from '../../components/Icons'
+import Nav from 'components/Navbar/Nav'
+import NavLinks from 'components/Navbar/NavLinks'
+import NavLink from 'components/Navbar/NavLink'
+import Image from 'components/Image'
+import SocialIconsContainer from 'components/Navbar/SocialIconsContainer'
+import MenuButton from 'components/Navbar/MenuButton'
+import MenuContent from 'components/Navbar/MenuContent'
+import Indicator from 'components/Navbar/Indicator'
+import { GithubIcon, LinkedinIcon, InstagramIcon } from 'components/Icons'
 
-import Photo from '../../assets/images/IMG_20180208_192306.jpg'
+import Photo from 'assets/images/IMG_20180208_192306.jpg'
 
-import pathNameFormatter from '../../utils/pathNameFormatter'
+import pathNameFormatter from 'utils/pathNameFormatter'
 
 export default function Navbar () {
   const [isOpen, setIsOpen] = useState(false)
@@ -31,7 +31,7 @@ export default function Navbar () {
         {
           formattedPath
             ? <Indicator path={formattedPath}/>
-            : <Image src={Photo} />
+            : <Image width='3rem' rounded src={Photo} />
         }
 
       </>

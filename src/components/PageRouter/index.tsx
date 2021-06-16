@@ -1,11 +1,11 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 
-import Home from '../../pages/Home'
-import About from '../../pages/About'
-import Contact from '../../pages/Contact'
-import Services from '../../pages/Services'
-import Works from '../../pages/Works'
+import Home from 'pages/Home'
+import About from 'pages/About'
+import Contact from 'pages/Contact'
+import Services from 'pages/Services'
+import Works from 'pages/Works'
 
 export default function PageRouter () {
   return (

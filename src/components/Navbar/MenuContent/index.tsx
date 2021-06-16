@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import guidelines from '../../../guidelines'
+import guidelines from 'guidelines'
 
 interface MenuContentProps {
   isOpen: boolean

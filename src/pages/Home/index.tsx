@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-import Container from '../../components/Container'
-import Hero from '../../components/Hero'
-import Button from '../../components/Button'
-import Text from '../../components/Text'
-import TextInput from '../../components/TextInput'
-import Illustration from '../../components/Illustration'
+import Container from 'components/Container'
+import Hero from 'components/Hero'
+import Button from 'components/Button'
+import Text from 'components/Text'
+import TextInput from 'components/TextInput'
+import Illustration from 'components/Illustration'
 
-import guidelines from '../../guidelines'
+import guidelines from 'guidelines'
 
 const { sizes, colors } = guidelines
 
