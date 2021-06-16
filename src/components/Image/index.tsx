@@ -9,7 +9,7 @@ interface ImageProps {
 const Image = styled.img<ImageProps>`
   width: ${({ width }) => width};
   border-radius: ${({ rounded }) => rounded && '100%'};
-  margin: 1rem;
+  margin: ${({ margin }) => margin};
 `
 
 export default Image
