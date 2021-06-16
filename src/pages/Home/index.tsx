@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 import Container from '../../components/Container'
 import Hero from '../../components/Hero'
@@ -54,6 +55,16 @@ export default function Home () {
               <br />
               Professional at building websites and integrating web services.
               <br />
+            </Text>
+            <Text
+              fontSize={sizes.rem['20px'] + 'rem'}
+              color={colors.darkBlueGreen}
+              fontFamily='Open Sans'
+              lineHeight={sizes.rem['30px'] + 'rem'}
+              textAlign='center'
+              margin='1rem 0 0 0'
+            >
+              You can contact me or <Link to='/works' style={{ color: colors.darkBlueGreen, textDecoration: 'none', fontWeight: 'bold' }}> Check my work </Link>
             </Text>
           </HeroTextWrapper>
           <HeroInputWrapper>
