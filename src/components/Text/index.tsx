@@ -8,6 +8,7 @@ interface TextProps {
   lineHeight?: string
   textAlign?: string
   margin?: string
+  padding?: string
 }
 const Text = styled.p<TextProps>`
   font-size: ${({ fontSize }) => fontSize};
@@ -16,7 +17,8 @@ const Text = styled.p<TextProps>`
   font-family: ${({ fontFamily }) => fontFamily};
   line-height: ${({ lineHeight }) => lineHeight};
   text-align: ${({ textAlign }) => textAlign};
-  margin: ${({ margin }) => margin}
+  margin: ${({ margin }) => margin};
+  padding: ${({ padding }) => padding};
 
 `
 

@@ -31,7 +31,7 @@ export default function Navbar () {
         {
           formattedPath
             ? <Indicator path={formattedPath}/>
-            : <Image width='3.3rem' rounded src={Photo} margin='1rem' />
+            : <Image width='3.3rem' borderRadius='100%' src={Photo} margin='1rem' />
         }
 
       </>
