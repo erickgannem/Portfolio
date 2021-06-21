@@ -12,12 +12,7 @@ import ImageGroup from 'pages/About/ImageGroup'
 import MainText from 'pages/About/MainText'
 import TextGroup from 'pages/About/TextGroup'
 
-import Text from 'components/Text'
-
-import guidelines from 'guidelines'
-
 export default function About () {
-  const { colors } = guidelines
   return (
     <Container
       padding='1rem'
@@ -32,28 +27,20 @@ export default function About () {
               My name is Erick Gannem
           </MainText>
           <AboutText>
-              I am Venezuelan self-taught programmer living in Brazil since 2018. I was raised in a IT-related family, mainly because of my father, who taught me all that I know today.I started using GNU/Linux when I was 8 years old, my father introduced me with Ubuntu 7.04 and until today I am a Linux user (now Archlinux). I started programming when I was 17 years old with a high focus on web development, I started reading a couple of books about basics HTML, CSS and Javascript, then learned Node.js, React as well as other frameworks. Currently learning Elixir.
+              I am Venezuelan self-taught programmer living in Brazil since 2018. I was raised in a IT-related family, mainly because of my father, who taught me all that I know today. I started programming when I was 20 years old with a high focus on web development.
+              I like to listen rock, country and almost any kind of music. Love to take pictures of sunsets and nature, here you can see some of them:
           </AboutText>
         </TextGroup>
       </>
       <ImageGroup>
         <GroupItem>
-          <Image src={PictureOne} width='100%' borderRadius='10px 10px 0 0'/>
-          <Text padding='1rem' color={colors.paleGrey2}>
-            {'I\'m really photography fan. Love to see the sunset'}
-          </Text>
+          <Image src={PictureOne} width='100%' borderRadius='10px'/>
         </GroupItem>
         <GroupItem>
-          <Image src={PictureTwo} width='100%' borderRadius='10px 10px 0 0'/>
-          <Text padding='1rem' color={colors.paleGrey2}>
-            {'I also love travelling and taking pictures of the places I visit'}
-          </Text>
+          <Image src={PictureTwo} width='100%' borderRadius='10px'/>
         </GroupItem>
         <GroupItem>
-          <Image src={PictureThree} width='100%' borderRadius='10px 10px 0 0'/>
-          <Text padding='1rem' color={colors.paleGrey2}>
-            {'Nothing very professional but you got the point =)'}
-          </Text>
+          <Image src={PictureThree} width='100%' borderRadius='10px'/>
         </GroupItem>
       </ImageGroup>
     </Container>
