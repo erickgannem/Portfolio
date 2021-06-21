@@ -41,23 +41,23 @@ export default function Navbar () {
           <NavLink
             to='/'
             $isActive={path === '/'}
-          >Home</NavLink>
+          >Início</NavLink>
           <NavLink
             to='/about'
             $isActive={path === '/about'}
-          >About</NavLink>
+          >Sobre Mim</NavLink>
           <NavLink
             to='/works'
             $isActive={path === '/works'}
-          >Works</NavLink>
+          >Projetos</NavLink>
           <NavLink
             to='/services'
             $isActive={path === '/services'}
-          >Services</NavLink>
+          >Habilidades</NavLink>
           <NavLink
             to='/contact'
             $isActive={path === '/contact'}
-          >Contact</NavLink>
+          >Contato</NavLink>
         </NavLinks>
         <SocialIconsContainer>
           <LinkedinIcon size='2rem' />

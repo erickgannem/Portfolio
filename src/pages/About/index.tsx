@@ -24,11 +24,12 @@ export default function About () {
         <Image width='15rem' src={Photo} borderRadius='100%' margin='auto' />
         <TextGroup>
           <MainText>
-              My name is Erick Gannem
+            Meu nome é Erick Gannem
           </MainText>
           <AboutText>
-              I am Venezuelan self-taught programmer living in Brazil since 2018. I was raised in a IT-related family, mainly because of my father, who taught me all that I know today. I started programming when I was 20 years old with a high focus on web development.
-              I like to listen rock, country and almost any kind of music. Love to take pictures of sunsets and nature, here you can see some of them:
+              Sou um programador venezuelano, autodidata que atualmente mora no Brasil desde 2018. Nasci numa familia bem relacionada com a área de TI por causa do meu pai, quem me ensinou tudo o que eu sei até hoje. Comecei programar por volta do ano 2016 focado no desenvolvimento web.
+
+              Gosto de ouvir quase qualquer tipo de música dos anos 80 e 90. Também sou fã de tirar fotos do pôr do sol e natureza. Olha algumas delas:
           </AboutText>
         </TextGroup>
       </>

@@ -42,7 +42,7 @@ export default function Home () {
               fontFamily='Fira Sans'
               margin={`0 0 ${sizes.rem['15px']}rem 0`}
             >
-              Hello, my name is Erick
+              Olá, meu nome é Erick
             </Text>
             <Text
               fontSize={sizes.rem['20px'] + 'rem'}
@@ -51,9 +51,9 @@ export default function Home () {
               lineHeight={sizes.rem['30px'] + 'rem'}
               textAlign='center'
             >
-              I am a freelancer, +5 years experience web developer
+              Sou freelancer com mais de 5 anos de experiência
               <br />
-              Professional at building websites and integrating web services.
+              Profissional criando sites e integrando serviços web
               <br />
             </Text>
             <Text
@@ -64,7 +64,7 @@ export default function Home () {
               textAlign='center'
               margin='1rem 0 0 0'
             >
-              You can contact me or <Link to='/works' style={{ color: colors.darkBlueGreen, textDecoration: 'none', fontWeight: 'bold' }}> Check my work </Link>
+              Fique à vontade para me contatar <Link to='/works' style={{ color: colors.darkBlueGreen, textDecoration: 'none', fontWeight: 'bold' }}> ou dar uma olhada no meu trabalho </Link>
             </Text>
           </HeroTextWrapper>
           <HeroInputWrapper>

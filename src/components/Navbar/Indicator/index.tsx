@@ -19,9 +19,26 @@ const _Text = styled.p`
 `
 
 export default function Indicator ({ path }: {path: string}) {
+  let output = ''
+
+  switch (path) {
+    case 'About':
+      output = 'Sobre Mim'
+      break
+    case 'Works':
+      output = 'Projetos'
+      break
+    case 'Services':
+      output = 'Habilidades'
+      break
+    case 'Contact':
+      output = 'Contato'
+      break
+  }
+
   return (
     <_Box>
-      <_Text>{path}</_Text>
+      <_Text>{output}</_Text>
     </_Box>
   )
 }
