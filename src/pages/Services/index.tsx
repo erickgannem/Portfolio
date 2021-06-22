@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 import Container from 'components/Container'
 
-import { ReactComponent as _RobotSVG } from 'assets/svg/auto.svg'
+import { ReactComponent as _AutomationSVG } from 'assets/svg/auto.svg'
 import { ReactComponent as _LayoutSVG } from 'assets/svg/desktop-ui.svg'
-import { ReactComponent as _GearsSVG } from 'assets/svg/integration.svg'
+import { ReactComponent as _IntegrationSVG } from 'assets/svg/integration.svg'
 
 import guidelines from 'guidelines'
 
@@ -39,7 +39,7 @@ const TextWrapper = styled.div`
   }
 `
 
-const RobotSVG = styled(_RobotSVG)`
+const AutomationSVG = styled(_AutomationSVG)`
   @media (max-width: 899px) {
     margin: 0 auto;
   }
@@ -49,10 +49,17 @@ const LayoutSVG = styled(_LayoutSVG)`
     margin: 0 auto;
   }
 `
-const GearsSVG = styled(_GearsSVG)`
+const IntegrationSVG = styled(_IntegrationSVG)`
   @media (max-width: 899px) {
     margin: 0 auto;
   }
+`
+
+const SVGWrapper = styled.div`
+  background: ${colors.paleGrey2};
+  border-radius: 100%;
+  padding: 4rem;
+  margin: 0 auto;
 `
 
 // will be separated
@@ -66,7 +73,9 @@ export default function Services () {
       padding='1rem'
     >
       <ServiceGroup>
-        <RobotSVG />
+        <SVGWrapper>
+          <AutomationSVG />
+        </SVGWrapper>
         <TextWrapper>
           <Title>
             Automatização de Processos
@@ -77,7 +86,9 @@ export default function Services () {
         </TextWrapper>
       </ServiceGroup>
       <ServiceGroup>
-        <LayoutSVG />
+        <SVGWrapper>
+          <LayoutSVG />
+        </SVGWrapper>
         <TextWrapper>
           <Title>
             Design de UI/UX
@@ -88,7 +99,9 @@ export default function Services () {
         </TextWrapper>
       </ServiceGroup>
       <ServiceGroup>
-        <GearsSVG />
+        <SVGWrapper>
+          <IntegrationSVG />
+        </SVGWrapper>
         <TextWrapper>
           <Title>
             Integração de Serviços
