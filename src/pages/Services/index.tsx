@@ -17,7 +17,13 @@ const ServiceGroup = styled.div`
 
   @media (max-width: 899px) {
     flex-direction: column;
+
+    ${this}:nth-child(2) {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
   }
+
 `
 const Title = styled.h1`
   font-weight: bolder;
@@ -31,11 +37,11 @@ const Description = styled.p`
   color: ${colors.darkBlueGreen};
   @media (max-width: 899px) {
     text-align: center;
+    font-size: 1.2rem;
   } 
 `
 const TextWrapper = styled.div`
   @media (max-width: 899px) {
-    margin: 1rem 0;
   }
 `
 
@@ -60,6 +66,7 @@ const SVGWrapper = styled.div`
   border-radius: 100%;
   padding: 4rem;
   margin: 0 auto;
+  box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.1);
 `
 
 // will be separated
