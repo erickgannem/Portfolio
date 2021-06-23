@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const SocialIconsContainer = styled.ul`
+const MobileIconsWrapper = styled.ul`
     display: flex;
     list-style: none;
 
@@ -8,6 +8,9 @@ const SocialIconsContainer = styled.ul`
         justify-content: center;
         margin-top: 2rem;
     }
+    @media (min-width: 900px) {
+        display: none;
+    }
 `
 
-export default SocialIconsContainer
+export default MobileIconsWrapper

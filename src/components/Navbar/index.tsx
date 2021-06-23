@@ -5,10 +5,11 @@ import Nav from 'components/Navbar/Nav'
 import NavLinks from 'components/Navbar/NavLinks'
 import NavLink from 'components/Navbar/NavLink'
 import Image from 'components/Image'
-import SocialIconsContainer from 'components/Navbar/SocialIconsContainer'
+import MobileIconsWrapper from 'components/Navbar/MobileIconsWrapper'
 import MenuButton from 'components/Navbar/MenuButton'
 import MenuContent from 'components/Navbar/MenuContent'
 import Indicator from 'components/Navbar/Indicator'
+import DesktopIconsWrapper from 'components/Navbar/DesktopIconsWrapper'
 import { GithubIcon, LinkedinIcon, InstagramIcon } from 'components/Navbar/Icons'
 
 import Photo from 'assets/images/IMG_20180208_192306.jpg'
@@ -59,12 +60,17 @@ export default function Navbar () {
             $isActive={path === '/contact'}
           >Contato</NavLink>
         </NavLinks>
-        <SocialIconsContainer>
+        <MobileIconsWrapper>
           <LinkedinIcon size='2rem' />
           <GithubIcon size='2rem' />
           <InstagramIcon size='2rem' />
-        </SocialIconsContainer>
+        </MobileIconsWrapper>
       </MenuContent>
+      <DesktopIconsWrapper>
+        <LinkedinIcon size='2rem' />
+        <GithubIcon size='2rem' />
+        <InstagramIcon size='2rem' />
+      </DesktopIconsWrapper>
     </Nav>
   )
 }
