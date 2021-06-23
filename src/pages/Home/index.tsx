@@ -6,7 +6,7 @@ import Hero from 'components/Hero'
 import Button from 'components/Button'
 import Text from 'components/Text'
 import TextInput from 'components/TextInput'
-import Illustration from 'components/Illustration'
+import HeroSVG from 'pages/Home/HeroSVG'
 
 import RightSideBlock from 'pages/Home/RightSideBlock'
 import HeroTextWrapper from 'pages/Home/HeroTextWrapper'
@@ -20,7 +20,7 @@ export default function Home () {
   return (
     <Container>
       <Hero>
-        <Illustration />
+        <HeroSVG />
         <RightSideBlock>
           <HeroTextWrapper>
             <Text
@@ -28,15 +28,15 @@ export default function Home () {
               fontWeight='bold'
               color={colors.coolGrey}
               fontFamily='Fira Sans'
-              margin={`0 0 ${sizes.rem['15px']}rem 0`}
+              margin='0 0 1rem 0'
             >
               Olá, meu nome é Erick
             </Text>
             <Text
-              fontSize={sizes.rem['20px'] + 'rem'}
+              fontSize='1.5rem'
               color={colors.darkBlueGreen}
               fontFamily='Open Sans'
-              lineHeight={sizes.rem['30px'] + 'rem'}
+              lineHeight='2rem'
               textAlign='center'
             >
               Sou freelancer com mais de 5 anos de experiência
@@ -45,10 +45,10 @@ export default function Home () {
               <br />
             </Text>
             <Text
-              fontSize={sizes.rem['20px'] + 'rem'}
+              fontSize='1.3rem'
               color={colors.darkBlueGreen}
               fontFamily='Open Sans'
-              lineHeight={sizes.rem['30px'] + 'rem'}
+              lineHeight='2rem'
               textAlign='center'
               margin='1rem 0 0 0'
             >
@@ -59,7 +59,7 @@ export default function Home () {
             <TextInput
               grow='4'
               borderRadius='5px 0 0 5px'
-              padding={`${sizes.rem['20px']}rem`}
+              padding='1.4rem'
               placeholder='Email Address'
               color={colors.darkBlueGreen}
             />
