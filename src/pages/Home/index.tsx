@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 import Container from 'components/Container'
@@ -9,24 +8,13 @@ import Text from 'components/Text'
 import TextInput from 'components/TextInput'
 import Illustration from 'components/Illustration'
 
+import RightSideBlock from 'pages/Home/RightSideBlock'
+import HeroTextWrapper from 'pages/Home/HeroTextWrapper'
+import HeroInputWrapper from 'pages/Home/HeroInputWrapper'
+
 import guidelines from 'guidelines'
 
 const { sizes, colors } = guidelines
-
-const RightSideBlock = styled.div`
-  display: flex;
-  flex-direction: column;
-`
-const HeroTextWrapper = styled.div`
-  text-align: center;
-
-  @media (max-width: 899px) {
-    margin-bottom: 2rem;
-  }
-`
-const HeroInputWrapper = styled.div`
-  display: flex;
-`
 
 export default function Home () {
   return (
