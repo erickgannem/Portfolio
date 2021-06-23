@@ -13,6 +13,7 @@ const Nav = styled.nav`
   z-index: 100;
   min-height: 5rem;
   position: relative;
+  max-height: 70px;
   
   @media (min-width: 900px) {
     display: grid;

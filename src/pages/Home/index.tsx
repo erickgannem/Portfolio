@@ -19,6 +19,9 @@ const { colors } = guidelines
 const _Container = styled.div`
 
 @media (min-width: 899px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
 }
 `

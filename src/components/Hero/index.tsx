@@ -16,7 +16,7 @@ const Hero = styled.div`
     flex-wrap: wrap;
   }
   @media (min-width: 900px) {
-    padding: 2rem;
+    padding: 5rem 10rem;
   }
 `
 export default Hero
