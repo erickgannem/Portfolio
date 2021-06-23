@@ -12,8 +12,9 @@ const NavLink = styled(Link)`
   margin: 0 ${sizes.rem['20px']}rem;
   font-size: ${sizes.rem['20px']}rem;
   background-color: ${({ $isActive }: NavLinkProps) => $isActive && colors.paleAqua};
-  padding: ${sizes.rem['10px']}rem ${sizes.rem['15px']}rem;
-  border-radius: ${sizes.rem['5px']}rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: inherit;
 
   @media (max-width: 899px) {
     color: ${({ $isActive }) => $isActive ? colors.darkBlueGreen : colors.paleGrey1}

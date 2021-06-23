@@ -8,7 +8,6 @@ interface MenuContentProps {
 
 const { colors } = guidelines
 const MenuContent = styled.div<MenuContentProps>`
-
   @media (max-width: 899px) {
     display: ${({ isOpen }) => !isOpen && 'none'};
     width: 100%;
@@ -18,7 +17,6 @@ const MenuContent = styled.div<MenuContentProps>`
     background: ${colors.darkBlueGreen90};
     padding: 1rem;
   }
-  
 `
 
 export default MenuContent

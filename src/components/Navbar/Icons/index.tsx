@@ -15,7 +15,9 @@ export const GithubIcon = styled(IoLogoGithub)`
   @media (max-width: 899px) {
     color: ${colors.paleGrey2};
     margin: 0 2rem;
-
+  }
+  @media (min-width: 900px) {
+    margin: 0 1rem;
   }
 `
 export const LinkedinIcon = styled(IoLogoLinkedin)`
