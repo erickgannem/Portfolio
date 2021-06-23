@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Container from 'components/Container'
 import Hero from 'components/Hero'
 import Button from 'components/Button'
 import Text from 'components/Text'
@@ -13,12 +12,20 @@ import HeroTextWrapper from 'pages/Home/HeroTextWrapper'
 import HeroInputWrapper from 'pages/Home/HeroInputWrapper'
 
 import guidelines from 'guidelines'
+import styled from 'styled-components'
 
 const { colors } = guidelines
 
+const _Container = styled.div`
+
+@media (min-width: 899px) {
+  padding: 2rem;
+}
+`
+
 export default function Home () {
   return (
-    <Container>
+    <_Container>
       <Hero>
         <HeroSVG />
         <RightSideBlock>
@@ -69,6 +76,6 @@ export default function Home () {
           </HeroInputWrapper>
         </RightSideBlock>
       </Hero>
-    </Container>
+    </_Container>
   )
 }

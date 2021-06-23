@@ -8,10 +8,12 @@ interface ContainerProps<T = 'grid' | 'flex'> {
   flexDirection?: string
   gridTemplateRows?: string
   gridTemplateColumns?: string
+  height?: string
 }
 const Container = styled.div<ContainerProps>`
   display: ${({ display }) => display};
   padding: ${({ padding }) => padding};
+  height: ${({ height }) => height};
   justify-content: ${({ justifyContent }) => justifyContent};
   align-items: ${({ alignItems }) => alignItems};
   flex-direction: ${({ flexDirection }) => flexDirection};

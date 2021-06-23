@@ -9,8 +9,8 @@ type NavLinkProps = {
 }
 const NavLink = styled(Link)`
   text-decoration: none;
-  margin: '0 1.4rem';
-  font-size: '1.6rem';
+  margin: 0 1.4rem;
+  font-size: 1.2rem;
   background-color: ${({ $isActive }: NavLinkProps) => $isActive && colors.paleAqua};
   padding: 0.5rem 1rem;
   border-radius: 5px;
