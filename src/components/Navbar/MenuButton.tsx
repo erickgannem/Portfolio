@@ -18,10 +18,10 @@ interface MenuButtonProps {
 }
 
 export default function MenuButton ({ clickHandler }: MenuButtonProps) {
-  const { colors, sizes } = guidelines
+  const { colors } = guidelines
   return (
     <Wrapper onClick={clickHandler}>
-      <IoMenu size={sizes.rem['30px'] + 'rem'} color={colors.darkBlueGreen} />
+      <IoMenu size='2rem' color={colors.darkBlueGreen} />
     </Wrapper>
   )
 }

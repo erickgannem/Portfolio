@@ -14,7 +14,7 @@ import HeroInputWrapper from 'pages/Home/HeroInputWrapper'
 
 import guidelines from 'guidelines'
 
-const { sizes, colors } = guidelines
+const { colors } = guidelines
 
 export default function Home () {
   return (
@@ -24,7 +24,7 @@ export default function Home () {
         <RightSideBlock>
           <HeroTextWrapper>
             <Text
-              fontSize={sizes.rem['70px'] + 'rem'}
+              fontSize='4.3rem'
               fontWeight='bold'
               color={colors.coolGrey}
               fontFamily='Fira Sans'
