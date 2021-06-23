@@ -9,7 +9,7 @@ import SocialIconsContainer from 'components/Navbar/SocialIconsContainer'
 import MenuButton from 'components/Navbar/MenuButton'
 import MenuContent from 'components/Navbar/MenuContent'
 import Indicator from 'components/Navbar/Indicator'
-import { GithubIcon, LinkedinIcon, InstagramIcon } from 'components/Icons'
+import { GithubIcon, LinkedinIcon, InstagramIcon } from 'components/Navbar/Icons'
 
 import Photo from 'assets/images/IMG_20180208_192306.jpg'
 
