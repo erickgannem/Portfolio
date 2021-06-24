@@ -11,12 +11,19 @@ const Hero = styled.div`
   justify-content: center;
   align-items: center;
   
+  @media (max-width: 399px) {
+    height: 100%;
+  }
+
   @media (max-width: 899px) {
     padding: 2rem;
     flex-wrap: wrap;
   }
+
   @media (min-width: 900px) {
-    padding: 5rem 10rem;
+    padding: 2rem;
   }
+
+
 `
 export default Hero

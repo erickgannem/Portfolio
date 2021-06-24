@@ -34,7 +34,6 @@ export default function Navbar () {
             ? <Indicator path={formattedPath}/>
             : <Image width='3.3rem' borderRadius='100%' src={Photo} margin='1rem' />
         }
-
       </>
       <MenuButton clickHandler={_clickHandler}/>
       <MenuContent isOpen={isOpen}>

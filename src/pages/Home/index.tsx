@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 import Hero from 'components/Hero'
 import Button from 'components/Button'
-import Text from 'components/Text'
 import TextInput from 'components/TextInput'
 import HeroSVG from 'pages/Home/HeroSVG'
 
@@ -17,13 +16,36 @@ import styled from 'styled-components'
 const { colors } = guidelines
 
 const _Container = styled.div`
-
-@media (min-width: 899px) {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-}
+
+  @media (min-width: 400px) {
+    padding: 1.5rem;
+  }
+`
+const _HeroTextHeader = styled.h1`
+  font-weight: bold;
+  font-family: 'Fira Sans';
+  color: ${colors.coolGrey};
+
+  @media (max-width: 899px) {
+    font-size: 4.3rem;
+    margin-bottom: 1rem;
+  }
+`
+const _HeroSecondaryText = styled.p`
+  @media (max-width: 899px) {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+`
+
+const _HeroThirdText = styled.p`
+  @media (max-width: 899px) {
+    font-size: 1.3rem;
+  }
 `
 
 export default function Home () {
@@ -33,37 +55,18 @@ export default function Home () {
         <HeroSVG />
         <RightSideBlock>
           <HeroTextWrapper>
-            <Text
-              fontSize='4.3rem'
-              fontWeight='bold'
-              color={colors.coolGrey}
-              fontFamily='Fira Sans'
-              margin='0 0 1rem 0'
-            >
+            <_HeroTextHeader>
               Olá, meu nome é Erick
-            </Text>
-            <Text
-              fontSize='1.5rem'
-              color={colors.darkBlueGreen}
-              fontFamily='Open Sans'
-              lineHeight='2rem'
-              textAlign='center'
-            >
+            </_HeroTextHeader>
+            <_HeroSecondaryText>
               Sou freelancer com mais de 5 anos de experiência
               <br />
               Profissional criando sites e integrando serviços web
               <br />
-            </Text>
-            <Text
-              fontSize='1.3rem'
-              color={colors.darkBlueGreen}
-              fontFamily='Open Sans'
-              lineHeight='2rem'
-              textAlign='center'
-              margin='1rem 0 0 0'
-            >
-              Fique à vontade para me contatar <Link to='/works' style={{ color: colors.darkBlueGreen, textDecoration: 'none', fontWeight: 'bold' }}> ou dar uma olhada no meu trabalho </Link>
-            </Text>
+            </_HeroSecondaryText>
+            <_HeroThirdText>
+              Fique à vontade para entrar em contato comigo <Link to='/works' style={{ color: colors.darkBlueGreen, textDecoration: 'none', fontWeight: 'bold' }}> ou dar uma olhada no meu trabalho </Link>
+            </_HeroThirdText>
           </HeroTextWrapper>
           <HeroInputWrapper>
             <TextInput

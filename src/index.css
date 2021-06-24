@@ -20,9 +20,19 @@ html, body, #root {
   height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  display: grid;
+  grid-template-areas: 
+  "navbar"
+  "wrapper";
+  grid-template-rows: 75px 1fr;
+}
+
+/* Media Queries */
+@media (max-width: 450px) {
+  html {
+    font-size: 80%;
+  }
 }
 
 /* Custom scrollbar */
@@ -35,18 +45,4 @@ code {
 ::-webkit-scrollbar-thumb {
   background: #869A96;
   border-radius: 0.1rem;
-}
-
-/* Media Queries */
-@media (min-width: 0) {
-  html {
-    font-size: 85%;
-  }
-}
-
-@media (max-width: 899px) {
-  #root {
-    display: grid;
-    grid-template-rows: 0fr 1fr;
-  }  
 }
