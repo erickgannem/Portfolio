@@ -34,18 +34,33 @@ const _HeroTextHeader = styled.h1`
     font-size: 4.3rem;
     margin-bottom: 1rem;
   }
+  @media (min-width: 900px) {
+    font-size: 3.8rem;
+    text-align: left;
+  }
 `
 const _HeroSecondaryText = styled.p`
   @media (max-width: 899px) {
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
+  @media (min-width: 900px) {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: right;
+  }  
 `
 
 const _HeroThirdText = styled.p`
   @media (max-width: 899px) {
     font-size: 1.3rem;
   }
+  @media (max-width: 900px) {
+    font-size: 1rem;
+    text-align: right;
+
+  }  
 `
 
 export default function Home () {
