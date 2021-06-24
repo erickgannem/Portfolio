@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { RiSendPlane2Fill } from 'react-icons/ri'
 
 import Hero from 'components/Hero'
 import TextInput from 'components/TextInput'
@@ -74,6 +75,8 @@ const _HeroButton = styled.button`
     cursor: pointer;
   }
 `
+const _SendIcon = styled(RiSendPlane2Fill)`
+`
 
 export default function Home () {
   return (
@@ -104,7 +107,7 @@ export default function Home () {
               color={colors.darkBlueGreen}
             />
             <_HeroButton>
-              Contact me
+              <_SendIcon size='20px' />
             </_HeroButton>
           </HeroInputWrapper>
         </RightSideBlock>
