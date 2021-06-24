@@ -32,7 +32,7 @@ export default function Navbar () {
         {
           formattedPath
             ? <Indicator path={formattedPath}/>
-            : <Image width='3.3rem' borderRadius='100%' src={Photo} margin='1rem' />
+            : <Image width='3.3rem' borderRadius='100%' src={Photo} margin=' 0 1rem' />
         }
       </>
       <MenuButton clickHandler={_clickHandler}/>
@@ -42,10 +42,6 @@ export default function Navbar () {
             to='/'
             $isActive={path === '/'}
           >Início</NavLink>
-          <NavLink
-            to='/about'
-            $isActive={path === '/about'}
-          >Sobre Mim</NavLink>
           <NavLink
             to='/works'
             $isActive={path === '/works'}
