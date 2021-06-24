@@ -10,6 +10,10 @@ const _Box = styled.div`
   padding: 1rem;
   align-self: stretch;
   background: ${colors.darkBlueGreen};
+
+  @media (min-width: 900px) {
+    opacity: 0;
+  }
 `
 const _Text = styled.p`
   margin: auto;
