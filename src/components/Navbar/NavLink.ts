@@ -10,14 +10,17 @@ type NavLinkProps = {
 const NavLink = styled(Link)`
   text-decoration: none;
   margin: 0 1.4rem;
-  font-size: 1.2rem;
   background-color: ${({ $isActive }: NavLinkProps) => $isActive && colors.paleAqua};
   padding: 0.5rem 1rem;
   border-radius: 5px;
   color: inherit;
 
   @media (max-width: 899px) {
-    color: ${({ $isActive }) => $isActive ? colors.darkBlueGreen : colors.paleGrey1}
+    color: ${({ $isActive }) => $isActive ? colors.darkBlueGreen : colors.paleGrey1};
+    font-size: 1.3rem;
+  }
+  @media (min-width: 900px) {
+    margin: 0 auto;
   }
 `
 export default NavLink
