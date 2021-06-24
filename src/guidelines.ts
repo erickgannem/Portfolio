@@ -11,19 +11,11 @@ export default {
     aquaGreen: '#00EB9F',
     shadow30: 'rgba(0, 0, 0, 0.3)',
     shadow60: 'rgba(0, 0, 0, 0.6)',
-    darkBlueGreen90: 'rgba(21, 60, 52, 0.9)'
-  },
-  sizes: {
-    rem: {
-      '5px': (5 / 16),
-      '10px': (10 / 16),
-      '15px': (15 / 16),
-      '20px': (20 / 16),
-      '25px': (25 / 16),
-      '30px': (30 / 16),
-      '50px': (50 / 16),
-      '70px': (70 / 16),
-      '350px': (350 / 16)
-    }
+    darkBlueGreen90: 'rgba(21, 60, 52, 0.9)',
+    ceruleanBlue: '#0066EB',
+    azul: '#006BF8',
+    orangeish: '#FF9156',
+    watermelon: '#FF4A62',
+    ReddyBrown: '#750010'
   }
 }

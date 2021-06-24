@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import Hero from 'components/Hero'
-import Button from 'components/Button'
 import TextInput from 'components/TextInput'
 import HeroSVG from 'pages/Home/HeroSVG'
 
@@ -56,11 +55,24 @@ const _HeroThirdText = styled.p`
   @media (max-width: 899px) {
     font-size: 1.3rem;
   }
-  @media (max-width: 900px) {
+  @media (min-width: 900px) {
     font-size: 1rem;
     text-align: right;
 
   }  
+`
+
+const _HeroButton = styled.button`
+  background: ${colors.orangeish};
+  border: none;
+  padding: 1rem;
+  border-radius: 0 5px 5px 0;
+  color: #802D00;
+  font-weight: bold;
+
+  ${this}:hover {
+    cursor: pointer;
+  }
 `
 
 export default function Home () {
@@ -91,9 +103,9 @@ export default function Home () {
               placeholder='Email Address'
               color={colors.darkBlueGreen}
             />
-            <Button grow='1' borderRadius='0 5px 5px 0'>
+            <_HeroButton>
               Contact me
-            </Button>
+            </_HeroButton>
           </HeroInputWrapper>
         </RightSideBlock>
       </Hero>

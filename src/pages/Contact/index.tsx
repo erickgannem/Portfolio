@@ -5,7 +5,6 @@ import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import Container from 'components/Container'
 
 import guidelines from 'guidelines'
-import Button from 'components/Button'
 
 const { colors } = guidelines
 // will be separated
@@ -109,14 +108,7 @@ export default function Contact () {
           <TextField style={{ margin: '1rem 0' }} type='text' placeholder='Seu e-mail'/>
           <TextArea placeholder='Sua mensagem'/>
         </FieldsWrapper>
-        <Button
-          borderRadius='5px'
-          fontSize='1rem'
-          width='50%'
-          margin='0 auto'
-        >
-          Enviar
-        </Button>
+        {/* <Button /> */}
       </ContactForm>
     </Container>
   )

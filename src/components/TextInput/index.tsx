@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import guidelines from 'guidelines'
 
-const { sizes, colors } = guidelines
+const { colors } = guidelines
 
 interface TextInputProps {
   grow?: string
@@ -16,7 +16,7 @@ const TextInput = styled.input<TextInputProps>`
   background-color: ${colors.white};
   border: none;
   padding: ${({ padding }) => padding};
-  font-size: ${sizes.rem['15px']}rem;
+  font-size: 1rem;
   color: ${({ color }) => color};
 
   ${this}:focus {
