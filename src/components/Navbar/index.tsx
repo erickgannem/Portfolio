@@ -35,7 +35,7 @@ export default function Navbar () {
             : <Image width='3.3rem' borderRadius='100%' src={Photo} margin=' 0 1rem' />
         }
       </>
-      <MenuButton clickHandler={_clickHandler}/>
+      <MenuButton clickHandler={_clickHandler} isOpen={isOpen}/>
       <MenuContent isOpen={isOpen}>
         <NavLinks>
           <NavLink

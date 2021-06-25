@@ -80,6 +80,7 @@ const _ItemTitle = styled.h1`
 const _ItemDescription = styled.p`
   color: ${colors.coolGrey};
   margin: 1rem 0;
+  text-align: center;
 `
 
 const _LowerItemSection = styled.div`

@@ -11,10 +11,10 @@ const MenuContent = styled.div<MenuContentProps>`
   @media (max-width: 899px) {
     display: ${({ isOpen }) => !isOpen && 'none'};
     width: 100%;
-    position: absolute;
-    top: 5rem;
-    left: 0;
-    background: ${colors.darkBlueGreen90};
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: ${colors.darkBlueGreen};
     padding: 1rem;
   }
 `
