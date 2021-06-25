@@ -10,6 +10,7 @@ const Wrapper = styled.button<{isOpen: boolean, right?: string}>`
   border: none;
   padding: 1rem;
   z-index: 200;
+  outline: none;
   background: rgba(0, 0, 0, 0);
   @media (min-width: 900px) {
     display: none;
