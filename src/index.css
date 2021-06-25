@@ -29,7 +29,7 @@ html, body, #root {
 }
 
 /* Media Queries */
-@media (max-width: 450px) {
+@media (max-width: 449px) {
   html {
     font-size: 80%;
   }
