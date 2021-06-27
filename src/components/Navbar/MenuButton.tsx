@@ -24,7 +24,6 @@ interface MenuButtonProps {
 
 export default function MenuButton ({ clickHandler, isOpen }: MenuButtonProps) {
   const { colors } = guidelines
-  console.log(isOpen)
   return (
     <Wrapper isOpen={isOpen} onClick={clickHandler}>
       <IoMenu
