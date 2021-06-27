@@ -7,20 +7,24 @@ import Placeholder from 'assets/images/comingsoon.png'
 
 import guidelines from 'guidelines'
 
-import { DiNodejsSmall, DiMongodb, DiRedis } from 'react-icons/di'
+import { DiNodejsSmall, DiMongodb, DiRedis, DiReact } from 'react-icons/di'
+import { SiTypescript } from 'react-icons/si'
 
 // Will be separated
 const { colors } = guidelines
 
-const _ImageGroup = styled.div`
+const _ItemsWrapper = styled.div`
   display: flex;
-  @media (max-width: 899px) {
-    flex-direction: column;
-    align-items: center;
-  }
+  flex-direction: column;
+  align-items: center;
   
+  @media (min-width: 650px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 `
-const _GroupItem = styled.div`
+const _Item = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -29,23 +33,25 @@ background-color: ${colors.darkBlueGreen90};
 border-radius: 5px;
 box-shadow: 1px -1px 10px ${colors.shadow60};
 
-@media (max-width: 449px) {
+@media (max-width: 649px) {
   max-width: 75%;
   min-width: 75%;
-}
-@media (max-width: 899px) {
   margin: 1.5rem 0 0 0;
+}
+@media (min-width: 650px) {
+  flex: 1 1 0;
+  margin: 0.5rem;
 }
 `
 
 const _Container = styled.div`
-  @media (max-width: 449px) {
+  @media (max-width: 889px) {
     padding: 1rem;
   }
 `
 
 const _Technologies = styled.div`
-  @media (max-width: 449px) {
+  @media (max-width: 889px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -53,8 +59,9 @@ const _Technologies = styled.div`
   }
 `
 const _Technology = styled.div`
-  @media (max-width: 449px) {
+  @media (max-width: 889px) {
     display: flex;
+    flex: 1 1 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -71,7 +78,7 @@ const _ItemTitle = styled.h1`
   font-family: 'Fira Sans';
   line-break: loose;
   
-  @media (max-width: 449px) {
+  @media (max-width: 889px) {
     text-align: center;
     font-size: 1.5rem;
   }
@@ -84,7 +91,7 @@ const _ItemDescription = styled.p`
 `
 
 const _LowerItemSection = styled.div`
-  @media (max-width: 449px) {
+  @media (max-width: 889px) {
     padding: 1.2rem;
   }
 `
@@ -93,17 +100,17 @@ const _LowerItemSection = styled.div`
 export default function Works () {
   return (
     <_Container>
-      <_ImageGroup>
-        <_GroupItem>
+      <_ItemsWrapper>
+        <_Item>
           <Image src={Placeholder} width='100%' borderRadius='5px 5px 0 0'/>
           <_LowerItemSection>
             <_ItemTitle>
               {'Fluxo Clicksign - Asaas'}
             </_ItemTitle>
             <_ItemDescription>
-              Se trata de uma integração entre a plataforma
-              de assinatura digital Clicksign e de pagamentos
-              eletrônicos Asaas
+              Integração entre a plataforma
+              de assinaturas digitais Clicksign
+              e a plataforma de pagamentos eletrônicos Asaas
             </_ItemDescription>
             <_Technologies>
               <_Technology>
@@ -118,32 +125,66 @@ export default function Works () {
                   RedisDB
                 </_TechnologyCaption>
               </_Technology>
+              <_Technology>
+                <SiTypescript size='2.3rem' color={colors.coolGrey}/>
+                <_TechnologyCaption>
+                  TypeScript
+                </_TechnologyCaption>
+              </_Technology>
             </_Technologies>
           </_LowerItemSection>
-        </_GroupItem>
-        <_GroupItem>
+        </_Item>
+        <_Item>
           <Image src={Placeholder} width='100%' borderRadius='5px 5px 0 0' />
           <_LowerItemSection>
             <_ItemTitle>
-              {'SPA React Flower Shop'}
+              {'React Flower Shop'}
             </_ItemTitle>
+            <_ItemDescription>
+              Catálogo para loja de flores com sistema de login
+              para o administrador, com paginação.
+              Simples e leve para ser acessado por conexões
+              lentas
+            </_ItemDescription>
+            <_Technologies>
+              <_Technology>
+                <DiReact size='2rem' color={colors.coolGrey}/>
+                <_TechnologyCaption>
+                  ReactJS
+                </_TechnologyCaption>
+              </_Technology>
+            </_Technologies>
           </_LowerItemSection>
-        </_GroupItem>
-        <_GroupItem>
+        </_Item>
+        <_Item>
           <Image src={Placeholder} width='100%' borderRadius='5px 5px 0 0' />
           <_LowerItemSection>
           <_ItemTitle>
-            {'Notas Fiscas Automáticas'}
+            {'Notas Fiscais Automáticas'}
           </_ItemTitle>
-          <_Technology>
+          <_ItemDescription>
+              Catálogo para loja de flores com sistema de login
+              para o administrador, com paginação.
+              Simples e leve para ser acessado por conexões
+              lentas
+          </_ItemDescription>
+          <_Technologies>
+            <_Technology>
               <DiMongodb size='2rem' color={colors.coolGrey}/>
               <_TechnologyCaption>
                 MongoDB
               </_TechnologyCaption>
             </_Technology>
+            <_Technology>
+              <DiNodejsSmall size='2.3rem' color={colors.coolGrey}/>
+              <_TechnologyCaption>
+                node.js
+              </_TechnologyCaption>
+            </_Technology>
+          </_Technologies>
           </_LowerItemSection>
-        </_GroupItem>
-      </_ImageGroup>
+        </_Item>
+      </_ItemsWrapper>
     </_Container>
   )
 }
