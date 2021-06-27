@@ -163,12 +163,17 @@ export default function Works () {
             {'Notas Fiscais Automáticas'}
           </_ItemTitle>
           <_ItemDescription>
-              Catálogo para loja de flores com sistema de login
-              para o administrador, com paginação.
-              Simples e leve para ser acessado por conexões
-              lentas
+            Detecção de pagamentos aprovados e posterior geração
+            de nota fiscal através da API Asaas. Controle de
+            transações processadas para evitar duplicados
           </_ItemDescription>
           <_Technologies>
+            <_Technology>
+              <DiNodejsSmall size='2.3rem' color={colors.coolGrey}/>
+              <_TechnologyCaption>
+                node.js
+              </_TechnologyCaption>
+            </_Technology>
             <_Technology>
               <DiMongodb size='2rem' color={colors.coolGrey}/>
               <_TechnologyCaption>
@@ -176,9 +181,9 @@ export default function Works () {
               </_TechnologyCaption>
             </_Technology>
             <_Technology>
-              <DiNodejsSmall size='2.3rem' color={colors.coolGrey}/>
+              <SiTypescript size='2.3rem' color={colors.coolGrey}/>
               <_TechnologyCaption>
-                node.js
+                TypeScript
               </_TechnologyCaption>
             </_Technology>
           </_Technologies>
