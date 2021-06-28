@@ -27,9 +27,11 @@ html, body, #root {
   "wrapper";
   grid-template-rows: 75px 1fr;
 }
-
+html {
+  font-size: 100%;
+}
 /* Media Queries */
-@media (max-width: 889px) {
+@media (max-width: 999px) {
   html {
     font-size: 80%;
   }

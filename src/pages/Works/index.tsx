@@ -14,13 +14,13 @@ import { SiTypescript } from 'react-icons/si'
 const { colors } = guidelines
 
 const _Container = styled.div`
-  @media (max-width: 889px) {
+  @media (max-width: 999px) {
     padding: 1rem;
   }
 `
 
 const _ItemTechnologies = styled.div`
-  @media (max-width: 889px) {
+  @media (max-width: 999px) {
     display: flex;
     flex-wrap: no-wrap;
     justify-content: center;
@@ -29,7 +29,7 @@ const _ItemTechnologies = styled.div`
   }
 `
 const _ItemTechnology = styled.div`
-  @media (max-width: 889px) {
+  @media (max-width: 999px) {
     display: flex;
     flex: 1 1 0;
     flex-direction: column;
@@ -44,7 +44,7 @@ const _ItemTitle = styled.h1`
   font-family: 'Fira Sans';
   line-break: loose;
   
-  @media (max-width: 889px) {
+  @media (max-width: 999px) {
     text-align: center;
     font-size: 1.5rem;
   }
@@ -89,6 +89,14 @@ box-shadow: 1px -1px 10px ${colors.shadow60};
 @media (min-width: 860px) {
   flex: 1 1 calc(90vw/3);
   max-width: calc(93vw/3);
+}
+@media (min-width: 860px) {
+  flex: 1 1 calc(90vw/3);
+  max-width: calc(93vw/3);
+}
+@media (min-width: 975px) {
+  flex: 1 1 calc(92vw/4);
+  max-width: calc(92vw/4);
 }
 `
 
@@ -253,6 +261,7 @@ export default function Works () {
             </_ItemTechnology>
           </_ItemTechnologies>
         </_Item>
+
       </_ItemsWrapper>
     </_Container>
   )
