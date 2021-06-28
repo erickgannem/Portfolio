@@ -36,7 +36,7 @@ const _HeroTextHeader = styled.h1`
   }
   @media (min-width: 900px) {
     font-size: 3.8rem;
-    text-align: left;
+    text-align: center;
   }
 `
 const _HeroSecondaryText = styled.p`

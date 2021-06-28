@@ -21,7 +21,7 @@ const Hero = styled.div`
   }
 
   @media (min-width: 900px) {
-    padding: 2rem 4rem;
+    padding: 1rem 3rem;
   }
 
 
