@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Container from 'components/Container'
-
 import { ReactComponent as _AutomationSVG } from 'assets/svg/auto.svg'
 import { ReactComponent as _LayoutSVG } from 'assets/svg/desktop-ui.svg'
 import { ReactComponent as _IntegrationSVG } from 'assets/svg/integration.svg'
@@ -12,15 +10,36 @@ import guidelines from 'guidelines'
 const { colors } = guidelines
 
 // will be separated
-const ServiceGroup = styled.div`
-  display: flex;
-
-  @media (max-width: 899px) {
+const _Container = styled.div`
+  @media (min-width: 0) {
+    padding: 2rem;
+    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+`
+const ServiceGroup = styled.div`
 
+  @media (min-width: 0) {
+    display: flex;
+    flex-direction: column;
     ${this}:nth-child(2) {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
+      margin-top: 4.5rem;
+      margin-bottom: 4.5rem;
+    }
+  }
+  @media (min-width: 650px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    ${this}:first-child {
+      flex-direction: row-reverse;
+    }
+    ${this}:last-child {
+      flex-direction: row-reverse;
     }
   }
 
@@ -28,35 +47,35 @@ const ServiceGroup = styled.div`
 const Title = styled.h1`
   font-weight: bolder;
   color: ${colors.darkBlueGreen};
-  @media (max-width: 899px) {
+  @media (min-width: 0) {
+    font-size: 2.3rem;
     text-align: center;
-    margin: 1rem 0 0.5rem 0;
+    margin: 1.5rem 0 0.8rem 0;
   }
 `
 const Description = styled.p`
   color: ${colors.darkBlueGreen};
-  @media (max-width: 899px) {
+  @media (min-width: 0) {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   } 
 `
 const TextWrapper = styled.div`
-  @media (max-width: 899px) {
+  @media (min-width: 0) {
   }
 `
-
 const AutomationSVG = styled(_AutomationSVG)`
-  @media (max-width: 899px) {
+  @media (min-width: 0) {
     margin: 0 auto;
   }
 `
 const LayoutSVG = styled(_LayoutSVG)`
-  @media (max-width: 899px) {
+  @media (min-width: 0) {
     margin: 0 auto;
   }
 `
 const IntegrationSVG = styled(_IntegrationSVG)`
-  @media (max-width: 899px) {
+  @media (min-width: 0) {
     margin: 0 auto;
   }
 `
@@ -67,18 +86,18 @@ const SVGWrapper = styled.div`
   padding: 4rem;
   margin: 0 auto;
   box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 650px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 `
 
 // will be separated
 
 export default function Services () {
   return (
-    <Container
-      display='flex'
-      flexDirection='column'
-      alignItems='center'
-      padding='1rem'
-    >
+    <_Container>
       <ServiceGroup>
         <SVGWrapper>
           <AutomationSVG />
@@ -118,6 +137,6 @@ export default function Services () {
           </Description>
         </TextWrapper>
       </ServiceGroup>
-    </Container>
+    </_Container>
   )
 }
