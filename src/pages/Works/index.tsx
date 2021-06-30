@@ -25,11 +25,15 @@ const _ItemTechnologies = styled.div`
     flex-wrap: no-wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0.5rem;
+  }
+  @media (min-width: 1000px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `
 const _ItemTechnology = styled.div`
-  @media (max-width: 999px) {
+  @media (min-width: 0) {
     display: flex;
     flex: 1 1 0;
     flex-direction: column;
@@ -37,15 +41,16 @@ const _ItemTechnology = styled.div`
     align-items: center;
     margin: 0 0.5rem;
   }
+
 `
 const _ItemTitle = styled.h1`
   color: ${colors.coolGrey};
-  font-weight: 400;
+  font-weight: 500;
   font-family: 'Fira Sans';
   line-break: loose;
+  text-align: center;
   
-  @media (max-width: 999px) {
-    text-align: center;
+  @media (min-width: 0) {
     font-size: 1.5rem;
   }
 `
@@ -53,30 +58,34 @@ const _ItemDescription = styled.p`
   color: ${colors.coolGrey};
   margin: 1rem 0;
   text-align: center;
+
+  @media (min-width: 650px) {
+    font-size: 1.1rem;
+  }
+  @media (min-width: 1000px) {
+    font-size: 1rem;
+  }
 `
 const _Item = styled.div`
 display: flex;
 flex-direction: column;
+justify-content: space-between;
 align-items: center;
 margin: auto;
 background-color: ${colors.darkBlueGreen90};
 border-radius: 5px;
 box-shadow: 1px -1px 10px ${colors.shadow60};
 
-@media (max-width: 649px) {
+@media (min-width: 0) {
   max-width: 75%;
   min-width: 75%;
   margin: 1.5rem 0 0 0;
+  padding-bottom: 1rem;
 }
 @media (min-width: 650px) {
-  flex: 1 1 0;
-  margin: 0.5rem;
-  justify-content: space-between;
-}
-
-@media (min-width: 650px) {
-  flex: 1 1 calc(90vw/3);
   max-width: calc(90vw/3);
+  min-width: 0;
+  margin: 0.5rem;
 }
 @media (min-width: 700px) {
   flex: 1 1 calc(90vw/3);
@@ -99,7 +108,6 @@ box-shadow: 1px -1px 10px ${colors.shadow60};
   max-width: calc(92vw/4);
 }
 `
-
 const _ItemsWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -113,13 +121,20 @@ const _ItemsWrapper = styled.div`
 `
 const _ItemTechnologyCaption = styled.p`
   color: ${colors.coolGrey};
+
+  @media (min-width: 650px) {
+    font-size: 0.9rem;
+  }
+  @media (min-width: 1000px) {
+    font-size: 0.8rem;
+  }
 `
 const _ItemHeaderSection = styled.div`
   @media (max-width: 889px) {
   }
 `
 const _ItemHeaderTextWrapper = styled.div`
-  padding: 0.5rem;
+  padding: 1rem;
 `
 
 // Will be separated

@@ -15,11 +15,12 @@ const NavLink = styled(Link)`
   border-radius: 5px;
   color: inherit;
 
-  @media (max-width: 899px) {
+  @media (min-width: 0) {
     color: ${({ $isActive }) => $isActive ? colors.darkBlueGreen : colors.paleGrey1};
     font-size: 1.3rem;
   }
   @media (min-width: 900px) {
+    color: inherit;
     margin: 0 auto;
   }
 `
