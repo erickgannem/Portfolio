@@ -13,6 +13,8 @@ import HeroInputWrapper from 'pages/Home/HeroInputWrapper'
 import guidelines from 'guidelines'
 import styled from 'styled-components'
 
+import NavbarMenuContext from 'context/NavbarMenuContext'
+
 const { colors } = guidelines
 
 const _Container = styled.div`
@@ -79,6 +81,10 @@ const _SendIcon = styled(RiSendPlane2Fill)`
 `
 
 export default function Home () {
+  const { setIsOpen } = React.useContext(NavbarMenuContext)
+  React.useEffect(() => {
+    setIsOpen(false)
+  }, [])
   return (
     <_Container>
       <Hero>

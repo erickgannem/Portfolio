@@ -9,6 +9,7 @@ import guidelines from 'guidelines'
 
 import { DiNodejsSmall, DiMongodb, DiRedis, DiReact, DiHtml5, DiCss3, DiJavascript } from 'react-icons/di'
 import { SiTypescript } from 'react-icons/si'
+import NavbarMenuContext from 'context/NavbarMenuContext'
 
 // Will be separated
 const { colors } = guidelines
@@ -140,6 +141,10 @@ const _ItemHeaderTextWrapper = styled.div`
 // Will be separated
 
 export default function Works () {
+  const { setIsOpen } = React.useContext(NavbarMenuContext)
+  React.useEffect(() => {
+    setIsOpen(false)
+  }, [])
   return (
     <_Container>
       <_ItemsWrapper>

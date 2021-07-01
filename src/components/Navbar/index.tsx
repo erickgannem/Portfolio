@@ -1,4 +1,4 @@
-import React, { useState, MouseEvent, MouseEventHandler } from 'react'
+import React, { MouseEvent, MouseEventHandler } from 'react'
 import { useLocation } from 'react-router-dom'
 
 import Nav from 'components/Navbar/Nav'
@@ -11,14 +11,15 @@ import MenuContent from 'components/Navbar/MenuContent'
 import Indicator from 'components/Navbar/Indicator'
 import DesktopIconsWrapper from 'components/Navbar/DesktopIconsWrapper'
 import { GithubIcon, LinkedinIcon, InstagramIcon } from 'components/Navbar/Icons'
+import NavbarMenuContext from 'context/NavbarMenuContext'
 
 import Photo from 'assets/images/IMG_20180208_192306.jpg'
 
 import pathNameFormatter from 'utils/pathNameFormatter'
 
 export default function Navbar () {
-  const [isOpen, setIsOpen] = useState(false)
   const { pathname: path } = useLocation()
+  const { isOpen, setIsOpen } = React.useContext(NavbarMenuContext)
 
   const formattedPath = pathNameFormatter(path) as string
 

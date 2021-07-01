@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 import guidelines from 'guidelines'
+import NavbarMenuContext from 'context/NavbarMenuContext'
 
 const { colors } = guidelines
 // will be separated
@@ -120,6 +121,10 @@ const _Container = styled.div`
 // will be separated
 
 export default function Contact () {
+  const { setIsOpen } = React.useContext(NavbarMenuContext)
+  React.useEffect(() => {
+    setIsOpen(false)
+  }, [])
   return (
     <_Container>
       <_ContactForm>

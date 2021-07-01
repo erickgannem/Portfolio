@@ -6,6 +6,7 @@ import { ReactComponent as _LayoutSVG } from 'assets/svg/desktop-ui.svg'
 import { ReactComponent as _IntegrationSVG } from 'assets/svg/integration.svg'
 
 import guidelines from 'guidelines'
+import NavbarMenuContext from 'context/NavbarMenuContext'
 
 const { colors } = guidelines
 
@@ -96,6 +97,10 @@ const SVGWrapper = styled.div`
 // will be separated
 
 export default function Services () {
+  const { setIsOpen } = React.useContext(NavbarMenuContext)
+  React.useEffect(() => {
+    setIsOpen(false)
+  }, [])
   return (
     <_Container>
       <ServiceGroup>
