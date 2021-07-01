@@ -9,7 +9,9 @@ interface MenuContentProps {
 const { colors } = guidelines
 const MenuContent = styled.div<MenuContentProps>`
   @media (max-width: 899px) {
-    display: ${({ isOpen }) => !isOpen && 'none'};
+    /* display: ${({ isOpen }) => !isOpen && 'none'}; */
+    transition: all 600ms;
+    transform: ${({ isOpen }) => isOpen ? 'translateX(0)' : 'translateX(100%)'};
     width: 100%;
     height: 100vh;
     position: fixed;
