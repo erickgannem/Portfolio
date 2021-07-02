@@ -15,7 +15,7 @@ import NavbarMenuContext from 'context/NavbarMenuContext'
 const { colors } = guidelines
 
 const _Container = styled.div`
-  @media (max-width: 999px) {
+  @media (min-width: 0) {
     padding: 1rem;
   }
 `
@@ -84,7 +84,7 @@ box-shadow: 1px -1px 10px ${colors.shadow60};
   padding-bottom: 1rem;
 }
 @media (min-width: 650px) {
-  max-width: calc(90vw/3);
+  max-width: calc(89vw/3);
   min-width: 0;
   margin: 0.5rem;
 }
@@ -105,8 +105,8 @@ box-shadow: 1px -1px 10px ${colors.shadow60};
   max-width: calc(93vw/3);
 }
 @media (min-width: 975px) {
-  flex: 1 1 calc(92vw/4);
-  max-width: calc(92vw/4);
+  flex: 1 1 calc(91vw/4);
+  max-width: calc(91vw/4);
 }
 `
 const _ItemsWrapper = styled.div`

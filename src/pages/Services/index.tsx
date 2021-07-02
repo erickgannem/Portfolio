@@ -62,12 +62,20 @@ const Description = styled.p`
   } 
 `
 const TextWrapper = styled.div`
-  @media (min-width: 0) {
+  @media (min-width: 1000px) {
+    padding: 5rem;
   }
+  @media (min-width: 1140px) {
+    padding: 6rem;
+  }
+  @media (min-width: 1160px) {
+    padding: 7rem;
+  }    
 `
 const AutomationSVG = styled(_AutomationSVG)`
   @media (min-width: 0) {
     margin: 0 auto;
+    width: auto;
   }
 `
 const LayoutSVG = styled(_LayoutSVG)`
@@ -80,13 +88,12 @@ const IntegrationSVG = styled(_IntegrationSVG)`
     margin: 0 auto;
   }
 `
-
 const SVGWrapper = styled.div`
   background: ${colors.paleGrey2};
   border-radius: 100%;
   padding: 4rem;
   margin: 0 auto;
-  box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid ${colors.coolGrey2};  
 
   @media (min-width: 650px) {
     margin-left: 1rem;
@@ -112,7 +119,7 @@ export default function Services () {
             Automatização de Processos
           </Title>
           <Description>
-            Fluxos de trabalho automatizados para tarefas manuais. Reduzindo transtornos por erro humano e melhorando o desempeho da equipe.
+            Fluxos de trabalho automatizados para tarefas manuais e repetitivas com o uso das tecnologías mais eficientes e recentes. Reduzindo assim transtornos devido a erro humano e melhorando o desempeho da equipe
           </Description>
         </TextWrapper>
       </ServiceGroup>
@@ -125,7 +132,7 @@ export default function Services () {
             Design de UI/UX
           </Title>
           <Description>
-            Interfaces de usuário legíveis, coloridas e interativas. Feitas para prender a atenção e facilitar a navegação pelo site ou aplicativo.
+            Interfaces de usuário legíveis, coloridas e bem distribuidas para sites na internet ou aplicativos mobile (Android, iOS). Especialmente projetadas para prender a atenção e facilitar a navegação e interação
           </Description>
         </TextWrapper>
       </ServiceGroup>
@@ -138,7 +145,11 @@ export default function Services () {
             Integração de Serviços
           </Title>
           <Description>
-            Integração de diversas API e ferramentas que permitem agilizar o fluxo de trabalho e estender a capacidade da equipe.
+            Integração de diversas plataformas e
+            ferramentas que se traduzem em agilidade
+            e produtividade para a equipe.
+            Fazendo com que tarefas que dependem de muitas
+            etapas possam ser realizadas como um só conjunto
           </Description>
         </TextWrapper>
       </ServiceGroup>
