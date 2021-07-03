@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import NavbarMenuContext from 'context/NavbarMenuContext'
 import Navbar from 'components/Navbar'
 import PageRouter from 'components/PageRouter'
+import Content from 'components/Content'
 
 export default function App () {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -11,7 +12,9 @@ export default function App () {
     <Router>
       <NavbarMenuContext.Provider value={{ isOpen, setIsOpen }}>
         <Navbar />
-        <PageRouter />
+        <Content>
+          <PageRouter />
+        </Content>
       </NavbarMenuContext.Provider>
 
     </Router>

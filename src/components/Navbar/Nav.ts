@@ -10,7 +10,8 @@ const Nav = styled.nav`
   justify-content: space-between;
   background-color: ${colors.paleGrey2};
   box-shadow: 1px 1px 15px ${colors.shadow30};
-  z-index: 100;
-  position: relative;
+  z-index: 5;
+  position: fixed;
+  height: 75px;
 `
 export default Nav

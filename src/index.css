@@ -16,16 +16,12 @@ body {
   background-color:#EBF1F8;
   color: #153C34;
 }
-html, body, #root {
+/* html, body, #root {
   height: 100%;
-}
+} */
 
 #root {
-  display: grid;
-  grid-template-areas: 
-  "navbar"
-  "wrapper";
-  grid-template-rows: 75px 1fr;
+  height: 100vh;
 }
 
 /* Media Queries */
