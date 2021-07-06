@@ -62,11 +62,14 @@ const Description = styled.p`
   } 
 `
 const TextWrapper = styled.div`
+  @media (min-width: 450px) {
+    padding: 0 4.5rem;
+  }
   @media (min-width: 1000px) {
-    padding: 5rem;
+    padding: 0 5rem;
   }
   @media (min-width: 1140px) {
-    padding: 6rem;
+    padding: 0 6rem;
   }
   @media (min-width: 1160px) {
     padding: 7rem;
