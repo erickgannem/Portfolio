@@ -16,10 +16,9 @@ body {
   background-color:#EBF1F8;
   color: #153C34;
 }
-html, body, #root {
+html, body {
   height: 100%;
 }
-
 
 /* Media Queries */
 @media (min-width: 0) {
