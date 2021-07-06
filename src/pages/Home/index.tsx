@@ -20,7 +20,6 @@ const { colors } = guidelines
 const _Container = styled.div`
   @media (min-width: 0) {
     padding: 20px;
-    height: 100%;
   }
 
 `

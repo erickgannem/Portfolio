@@ -13,7 +13,7 @@ const { colors } = guidelines
 // will be separated
 const _Container = styled.div`
   @media (min-width: 0) {
-    padding: 2rem;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -49,7 +49,7 @@ const Title = styled.h1`
   font-weight: bolder;
   color: ${colors.darkBlueGreen};
   @media (min-width: 0) {
-    font-size: 2.3rem;
+    font-size: 1.6rem;
     text-align: center;
     margin: 1.5rem 0 0.8rem 0;
   }
@@ -58,7 +58,7 @@ const Description = styled.p`
   color: ${colors.darkBlueGreen};
   @media (min-width: 0) {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
   } 
 `
 const TextWrapper = styled.div`
@@ -75,24 +75,30 @@ const TextWrapper = styled.div`
 const AutomationSVG = styled(_AutomationSVG)`
   @media (min-width: 0) {
     margin: 0 auto;
-    width: auto;
+    width: 150px;
+    height: 150px;
   }
 `
 const LayoutSVG = styled(_LayoutSVG)`
   @media (min-width: 0) {
     margin: 0 auto;
+    width: 150px;
+    height: 150px;
   }
 `
 const IntegrationSVG = styled(_IntegrationSVG)`
   @media (min-width: 0) {
     margin: 0 auto;
+    width: 150px;
+    height: 150px;
+
   }
 `
 const SVGWrapper = styled.div`
   background: ${colors.paleGrey2};
-  border-radius: 100%;
-  padding: 4rem;
   margin: 0 auto;
+  padding: 30px;
+  border-radius: 50%;
   border: 1px solid ${colors.coolGrey2};  
 
   @media (min-width: 650px) {
@@ -119,7 +125,7 @@ export default function Services () {
             Automatização de Processos
           </Title>
           <Description>
-            Fluxos de trabalho automatizados para tarefas manuais e repetitivas com o uso das tecnologías mais eficientes e recentes. Reduzindo assim transtornos devido a erro humano e melhorando o desempeho da equipe
+            Fluxos de trabalho automatizados para tarefas manuais e repetitivas com o uso das tecnologías mais eficientes e recentes. Reduzindo assim transtornos devido a erro humano e melhorando o desempeho da equipe.
           </Description>
         </TextWrapper>
       </ServiceGroup>
@@ -132,7 +138,7 @@ export default function Services () {
             Design de UI/UX
           </Title>
           <Description>
-            Interfaces de usuário legíveis, coloridas e bem distribuidas para sites na internet ou aplicativos mobile (Android, iOS). Especialmente projetadas para prender a atenção e facilitar a navegação e interação
+            Interfaces de usuário legíveis, coloridas e bem distribuidas para sites na internet ou aplicativos mobile (Android, iOS). Especialmente projetadas para prender a atenção e facilitar a navegação e interação.
           </Description>
         </TextWrapper>
       </ServiceGroup>
@@ -149,7 +155,7 @@ export default function Services () {
             ferramentas que se traduzem em agilidade
             e produtividade para a equipe.
             Fazendo com que tarefas que dependem de muitas
-            etapas possam ser realizadas como um só conjunto
+            etapas possam ser realizadas como um só conjunto.
           </Description>
         </TextWrapper>
       </ServiceGroup>

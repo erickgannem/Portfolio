@@ -21,7 +21,7 @@ const _Container = styled.div`
 `
 
 const _ItemTechnologies = styled.div`
-  @media (max-width: 999px) {
+  @media (min-width: 0) {
     display: flex;
     flex-wrap: no-wrap;
     justify-content: center;
@@ -48,17 +48,20 @@ const _ItemTitle = styled.h1`
   color: ${colors.coolGrey};
   font-weight: 500;
   font-family: 'Fira Sans';
-  line-break: loose;
-  text-align: center;
   
   @media (min-width: 0) {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    text-align: center;
   }
 `
 const _ItemDescription = styled.p`
   color: ${colors.coolGrey};
-  margin: 1rem 0;
-  text-align: center;
+
+  @media (min-width: 0) {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1.15rem;
+  }
 
   @media (min-width: 650px) {
     font-size: 1.1rem;

@@ -9,7 +9,6 @@ const Hero = styled.div`
 
   @media (min-width: 0) {
     padding: 25px;
-    /* height: 100%; */
   }
 
 
