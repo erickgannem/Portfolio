@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { RiSendPlane2Fill } from 'react-icons/ri'
 
-import Hero from 'components/Hero'
+import Hero from 'pages/Home/Hero'
 import TextInput from 'components/TextInput'
 import HeroSVG from 'pages/Home/HeroSVG'
 
@@ -18,44 +18,29 @@ import NavbarMenuContext from 'context/NavbarMenuContext'
 const { colors } = guidelines
 
 const _Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-  @media (max-width: 399px) {
+  @media (min-width: 0) {
+    padding: 20px;
     height: 100%;
   }
 
-  @media (min-width: 400px) {
-    padding: 1.5rem;
-  }
 `
 const _HeroTextHeader = styled.h1`
   font-weight: bold;
   font-family: 'Fira Sans';
   color: ${colors.coolGrey};
 
-  @media (max-width: 899px) {
-    font-size: 4.3rem;
-    margin-bottom: 1rem;
+  @media (min-width: 0) {
+    font-size: 4rem;
+    line-height: 60px;
+    margin-bottom: 10px;
   }
-  @media (min-width: 900px) {
-    font-size: 3.8rem;
-    text-align: center;
-  }
+
 `
 const _HeroSecondaryText = styled.p`
-  @media (max-width: 899px) {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+  @media (min-width: 0) {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
   }
-  @media (min-width: 900px) {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: right;
-  }  
 `
 
 const _HeroThirdText = styled.p`

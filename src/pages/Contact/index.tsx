@@ -5,6 +5,7 @@ import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import guidelines from 'guidelines'
 import NavbarMenuContext from 'context/NavbarMenuContext'
 
+import { ReactComponent as _BannerSVG } from 'assets/svg/contact-banner.svg'
 const { colors } = guidelines
 // will be separated
 
@@ -118,6 +119,25 @@ const _Container = styled.div`
     padding: 2rem;
   }
 `
+const _ContactBanner = styled(_BannerSVG)`
+  @media (min-width: 0) {
+    width: 20rem;
+  }
+`
+const _BannerWrapper = styled.div`
+  @media (min-width: 0) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+`
+const _BannerHeader = styled.h1`
+  @media (min-width: 0) {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+`
 // will be separated
 
 export default function Contact () {
@@ -127,6 +147,12 @@ export default function Contact () {
   }, [])
   return (
     <_Container>
+      <_BannerWrapper>
+        <_ContactBanner />
+        <_BannerHeader>
+          A sua opinião é importante!
+        </_BannerHeader>
+      </_BannerWrapper>
       <_ContactForm>
         <_FieldsWrapper>
           <_TextField type='text' placeholder='Seu nome'/>
