@@ -21,7 +21,12 @@ const _Container = styled.div`
   @media (min-width: 0) {
     padding: 20px;
   }
-
+  @media (min-width: 1000px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 `
 const _HeroTextHeader = styled.h1`
   font-weight: bold;
@@ -33,6 +38,9 @@ const _HeroTextHeader = styled.h1`
     line-height: 60px;
     margin-bottom: 10px;
   }
+  @media (min-width: 900px) {
+    margin-bottom: 15px;
+  }
 
 `
 const _HeroSecondaryText = styled.p`
@@ -40,15 +48,19 @@ const _HeroSecondaryText = styled.p`
     font-size: 1.4rem;
     margin-bottom: 10px;
   }
+  @media (min-width: 900px) {
+    text-align: center;
+    font-size: 1.2rem;
+  }
 `
 
 const _HeroThirdText = styled.p`
-  @media (max-width: 899px) {
-    font-size: 1.3rem;
+  @media (min-width: 0) {
+    font-size: 1.4rem;
   }
   @media (min-width: 900px) {
-    font-size: 1rem;
-    text-align: right;
+    font-size: 1.1rem;
+    text-align: center;
 
   }  
 `

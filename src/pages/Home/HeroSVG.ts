@@ -2,14 +2,18 @@ import styled from 'styled-components'
 import { ReactComponent as _HeroSVG } from 'assets/svg/left-side-hero.svg'
 
 const HeroSVG = styled(_HeroSVG)`
-  @media (max-width:399px) {
+  @media (min-width: 0) {
     display: none;
+    height: auto;
   }
-  @media (max-width: 899px) {
+  @media (min-width:350px) {
+    display: inline;
+  }  
+  @media (min-width: 0) {
     width: 100%;
   }
   @media (min-width: 900px) {
-    width: auto;
+    width: 24rem;
   }
 `
 
